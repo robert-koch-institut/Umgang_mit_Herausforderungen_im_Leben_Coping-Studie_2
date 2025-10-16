@@ -1,0 +1,3600 @@
+{
+    "title": "Datenschema | Umgang mit Herausforderungen im Leben - Coping-Studie II",
+    "description": "Das vorliegenden Datenschema ist eine eindeutige, vollständige und maschinenlesbare Repräsentation der beantragbaren Rohdaten der Studie 'Umgang mit Herausforderungen im Leben - Coping-Studie II' mit allen Details. Das Datenschema orientiert sich am Datapackage-Format (v2). Informationen zum Datapackage Data Standard finden Sie unter https://datapackage.org/. Mehr Information über den Datensatz finden sie auf Zenodo (https://doi.org/10.5281/zenodo.12542554) oder Github (https://github.com/robert-koch-institut/Umgang_mit_Herausforderungen_im_Leben_Coping-Studie_2)",
+    "fields": [
+        {
+            "name": "record",
+            "type": "integer",
+            "description": "Record number (Open numeric response)"
+        },
+        {
+            "name": "date",
+            "type": "string",
+            "description": "Completion time and date (Open text response)"
+        },
+        {
+            "name": "rec_sample",
+            "type": "integer",
+            "description": "Sample",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "2"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "DE"
+                },
+                {
+                    "value": "2",
+                    "label": "UK"
+                }
+            ]
+        },
+        {
+            "name": "rec_lang",
+            "type": "integer",
+            "description": "Language",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "2"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "German"
+                },
+                {
+                    "value": "2",
+                    "label": "English"
+                }
+            ]
+        },
+        {
+            "name": "age",
+            "type": "integer",
+            "description": "Wie alt sind Sie? (Angabe in Jahren)",
+            "constraints": {
+                "minimum": "18",
+                "maximum": "75"
+            }
+        },
+        {
+            "name": "agegroup",
+            "type": "integer",
+            "description": "Zuordnung zu einer Altersgruppe",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Altersgruppe 18-29 Jahre"
+                },
+                {
+                    "value": "2",
+                    "label": "Altersgruppe 30-44 Jahre"
+                },
+                {
+                    "value": "3",
+                    "label": "Altersgruppe 45-59 Jahre"
+                },
+                {
+                    "value": "4",
+                    "label": "Altersgruppe 60-74 Jahre"
+                }
+            ]
+        },
+        {
+            "name": "sex",
+            "type": "integer",
+            "description": "Welches Geschlecht wurde bei Ihrer Geburt in Ihre Geburtsurkunde eingetragen?",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "1"
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "Männlich"
+                },
+                {
+                    "value": "1",
+                    "label": "Weiblich"
+                }
+            ]
+        },
+        {
+            "name": "sex2",
+            "type": "integer",
+            "description": "Welchem Geschlecht fühlen Sie sich zugehörig?",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "2"
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "Männlich"
+                },
+                {
+                    "value": "1",
+                    "label": "Weiblich"
+                },
+                {
+                    "value": "2",
+                    "label": "Divers"
+                }
+            ]
+        },
+        {
+            "name": "fam",
+            "type": "integer",
+            "description": "Welchen Familienstand haben Sie?",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "verheiratet oder in fester Partnerschaft"
+                },
+                {
+                    "value": "2",
+                    "label": "verheiratet aber getrennt lebend"
+                },
+                {
+                    "value": "3",
+                    "label": "geschieden oder Aufhebung der eingetragenen Partnerschaft"
+                },
+                {
+                    "value": "4",
+                    "label": "verwitwet oder Lebenspartner:in verstorben"
+                },
+                {
+                    "value": "5",
+                    "label": "ledig"
+                }
+            ]
+        },
+        {
+            "name": "school",
+            "type": "integer",
+            "description": "Welchen höchsten allgemeinbildenden Schulabschluss haben Sie? Ordnen Sie bitte im Ausland erworbene Abschlüsse einem gleichwertigen deutschen Abschluss zu.",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "8"
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "proguse uk"
+                },
+                {
+                    "value": "1",
+                    "label": "Noch keinen Schulabschluss, ich bin Schüler/in"
+                },
+                {
+                    "value": "2",
+                    "label": "Schule beendet ohne Schulabschluss"
+                },
+                {
+                    "value": "3",
+                    "label": "Haupt- oder Volksschulabschluss"
+                },
+                {
+                    "value": "4",
+                    "label": "Realschulabschluss, Mittlere Reife oder gleichwertiger Abschluss"
+                },
+                {
+                    "value": "5",
+                    "label": "Polytechnische Oberschule oder DDR: mit Abschluss nach der 8. oder 9. Klasse"
+                },
+                {
+                    "value": "6",
+                    "label": "Polytechnische Oberschule oder DDR: mit Abschluss nach der 10. Klasse"
+                },
+                {
+                    "value": "7",
+                    "label": "Fachhochschulreife"
+                },
+                {
+                    "value": "8",
+                    "label": "Abitur (allgemeine oder fachgebundene Hochschulreife)"
+                }
+            ]
+        },
+        {
+            "name": "profess1",
+            "type": "integer",
+            "description": "Haben Sie einen beruflichen Ausbildungsabschluss oder einen Hochschul-/Fachhochschulabschluss? Als berufliche Ausbildung gilt auch eine Anlernausbildung oder ein Praktikum von mindestens 12 Monaten.",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "1"
+            },
+            "missingValues": [
+                {
+                    "value": "-99",
+                    "label": "Systematisch fehlende Werte (z.B. bei Mehrfachantworten)"
+                }
+            ],
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Ja"
+                },
+                {
+                    "value": "0",
+                    "label": "Nein"
+                }
+            ]
+        },
+        {
+            "name": "profess2",
+            "type": "integer",
+            "description": "Welchen höchsten beruflichen Ausbildungs- oder Hochschul-/Fachhochschulabschluss haben Sie? Ordnen Sie bitte im Ausland erworbene Abschlüsse einem gleichwertigen deutschen Abschluss zu.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "16"
+            },
+            "missingValues": [
+                {
+                    "value": "-99",
+                    "label": "Systematisch fehlende Werte (z.B. bei Mehrfachantworten)"
+                }
+            ],
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Anlernausbildung, berufliches Praktikum"
+                },
+                {
+                    "value": "2",
+                    "label": "Berufsvorbereitungsjahr"
+                },
+                {
+                    "value": "3",
+                    "label": "Lehre, Berufsausbildung im dualen System"
+                },
+                {
+                    "value": "4",
+                    "label": "Berufsqualifizierender Abschluss an einer Berufsfachschule, Kollegschule"
+                },
+                {
+                    "value": "5",
+                    "label": "Vorbereitungsdienst für den mittleren Dienst in der öffentlichen Verwaltung)Ausbildungsstätten/Schulen für Gesundheits- und Sozialberufe:"
+                },
+                {
+                    "value": "6",
+                    "label": "Einjährig (z.B. Krankenpflegehelfer/in, Altenpfleger/in, Rettungsassistent/in)"
+                },
+                {
+                    "value": "7",
+                    "label": "Zweijährig (z.B. Masseur/in, Medizinischer/Medizinische Bademeister/in, PTA, Podologe/Podologin)"
+                },
+                {
+                    "value": "8",
+                    "label": "Dreijährig (z.B. Physiotherapie, Gesundheits- und Krankenpflege, MTA, Altenpflege)"
+                },
+                {
+                    "value": "9",
+                    "label": "Ausbildungsstätten/Schulen für Erzieher/innen"
+                },
+                {
+                    "value": "10",
+                    "label": "Meister/in, Techniker/in oder gleichwertiger Fachschulabschluss"
+                },
+                {
+                    "value": "11",
+                    "label": "Fachschule der DDR"
+                },
+                {
+                    "value": "12",
+                    "label": "Fachakademie (nur in Bayern)"
+                },
+                {
+                    "value": "13",
+                    "label": "Berufsakademie"
+                },
+                {
+                    "value": "14",
+                    "label": "Verwaltungsfachhochschule"
+                },
+                {
+                    "value": "15",
+                    "label": "Fachhochschule (auch Ingenieurschule, Hochschule (FH) für angewandte Wissenschaften). Duale Hochschule Baden-Württemberg"
+                },
+                {
+                    "value": "16",
+                    "label": "Universität (wissenschaftliche Hochschule, auch: Kunsthochschule, Pädagogische Hochschule, Theologische Hochschule)"
+                }
+            ]
+        },
+        {
+            "name": "profess3",
+            "type": "integer",
+            "description": "Wie ist die Bezeichnung Ihres höchsten Abschlusses?",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "4"
+            },
+            "missingValues": [
+                {
+                    "value": "-99",
+                    "label": "Systematisch fehlende Werte (z.B. bei Mehrfachantworten)"
+                }
+            ],
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Bachelor"
+                },
+                {
+                    "value": "2",
+                    "label": "Master"
+                },
+                {
+                    "value": "3",
+                    "label": "Diplom, Lehramtsprüfung, Staatsprüfung, Staatsexamen, Magister, künstlerischer Abschluss und vergleichbare Abschlüsse"
+                },
+                {
+                    "value": "4",
+                    "label": "Promotion"
+                }
+            ]
+        },
+        {
+            "name": "Employ",
+            "type": "integer",
+            "description": "Welche Lebenssituation trifft derzeit überwiegend auf Sie zu?",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "9"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Ich bin erwerbstätig in Vollzeit, gemeint ist auch Berufsausbildung oder Selbständigkeit"
+                },
+                {
+                    "value": "2",
+                    "label": "Ich bin erwerbstätig in Teilzeit, gemeint ist auch Berufsausbildung oder Selbständigkeit."
+                },
+                {
+                    "value": "3",
+                    "label": "Ich bin derzeit in Kurzarbeit."
+                },
+                {
+                    "value": "4",
+                    "label": "Ich bin geringfügig erwerbstätig, z.B. 450-Euro-Job, Minijob."
+                },
+                {
+                    "value": "5",
+                    "label": "Ich bin arbeitslos oder arbeitssuchend bei der Agentur für Arbeit gemeldet, gemeint ist auch \"Ein-Euro-Job\"."
+                },
+                {
+                    "value": "6",
+                    "label": "Ich bin im Ruhestand oder Vorruhestand."
+                },
+                {
+                    "value": "7",
+                    "label": "Ich bin Schüler/in, Student/in, Praktikant/in, Teilnehmer/in an Fortbildungsmaßnahmen, übe Freiwilligendienst aus."
+                },
+                {
+                    "value": "8",
+                    "label": "Ich bin als Hausfrau/Hausmann tätig, betreue Kinder oder hilfsbedürftige Personen."
+                },
+                {
+                    "value": "9",
+                    "label": "Ich bin aus anderen Gründen nicht erwerbstätig."
+                }
+            ]
+        },
+        {
+            "name": "migra1",
+            "type": "integer",
+            "description": "In welchem Land sind Sie geboren?",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "2"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "In Deutschland"
+                },
+                {
+                    "value": "2",
+                    "label": "In einem anderen Land"
+                }
+            ]
+        },
+        {
+            "name": "migra2",
+            "type": "integer",
+            "description": "In welchem Land sind Ihre Eltern geboren?",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "3"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Beide Elternteile in Deutschland"
+                },
+                {
+                    "value": "2",
+                    "label": "Ein Elternteil in Deutschland, ein Elternteil in einem anderen Land"
+                },
+                {
+                    "value": "3",
+                    "label": "Beide Elternteile in einem anderen Land"
+                }
+            ]
+        },
+        {
+            "name": "q1asku1",
+            "type": "integer",
+            "description": "Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: In schwierigen Situationen kann ich mich auf meine Fähigkeiten verlassen.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft gar nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft wenig zu"
+                },
+                {
+                    "value": "3",
+                    "label": "trifft etwas zu"
+                },
+                {
+                    "value": "4",
+                    "label": "trifft ziemlich zu"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "q1asku2",
+            "type": "integer",
+            "description": "Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: Die meisten Probleme kann ich aus eigener Kraft gut meistern.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft gar nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft wenig zu"
+                },
+                {
+                    "value": "3",
+                    "label": "trifft etwas zu"
+                },
+                {
+                    "value": "4",
+                    "label": "trifft ziemlich zu"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "q1asku3",
+            "type": "integer",
+            "description": "Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: Auch anstrengende und komplizierte Aufgaben kann ich in der Regel gut lösen.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft gar nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft wenig zu"
+                },
+                {
+                    "value": "3",
+                    "label": "trifft etwas zu"
+                },
+                {
+                    "value": "4",
+                    "label": "trifft ziemlich zu"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "q1ie1",
+            "type": "integer",
+            "description": "Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: Ich habe mein Leben selbst in der Hand.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft gar nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft wenig zu"
+                },
+                {
+                    "value": "3",
+                    "label": "trifft etwas zu"
+                },
+                {
+                    "value": "4",
+                    "label": "trifft ziemlich zu"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "q1ie2",
+            "type": "integer",
+            "description": "Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: Wenn ich mich anstrenge, werde ich auch Erfolg haben.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft gar nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft wenig zu"
+                },
+                {
+                    "value": "3",
+                    "label": "trifft etwas zu"
+                },
+                {
+                    "value": "4",
+                    "label": "trifft ziemlich zu"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "q1ie3",
+            "type": "integer",
+            "description": "Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: Egal ob privat oder im Beruf: Mein Leben wird zum großen Teil von anderen bestimmt.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft gar nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft wenig zu"
+                },
+                {
+                    "value": "3",
+                    "label": "trifft etwas zu"
+                },
+                {
+                    "value": "4",
+                    "label": "trifft ziemlich zu"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "q1ie4",
+            "type": "integer",
+            "description": "Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: Meine Pläne werden oft vom Schicksal durchkreuzt.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft gar nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft wenig zu"
+                },
+                {
+                    "value": "3",
+                    "label": "trifft etwas zu"
+                },
+                {
+                    "value": "4",
+                    "label": "trifft ziemlich zu"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "swl",
+            "type": "integer",
+            "description": "Wie zufrieden sind Sie gegenwärtig, alles in allem, mit Ihrem Leben?",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "10"
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "Überhaupt nicht zufrieden"
+                },
+                {
+                    "value": "10",
+                    "label": "Voll und ganz zufrieden"
+                }
+            ]
+        },
+        {
+            "name": "hap",
+            "type": "integer",
+            "description": "Alles in allem betrachtet, was würden Sie sagen, wie glücklich sind Sie gegenwärtig?",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "10"
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "Überhaupt nicht zufrieden"
+                },
+                {
+                    "value": "10",
+                    "label": "Voll und ganz zufrieden"
+                }
+            ]
+        },
+        {
+            "name": "mean",
+            "type": "integer",
+            "description": "In wie weit empfinden Sie die Dinge, die Sie in ihrem Leben tun, insgesamt für sinnvoll?",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "10"
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "Überhaupt nicht zufrieden"
+                },
+                {
+                    "value": "10",
+                    "label": "Voll und ganz zufrieden"
+                }
+            ]
+        },
+        {
+            "name": "osss1",
+            "type": "integer",
+            "description": "Wie viele Menschen stehen Ihnen so nahe, dass Sie sich auf sie verlassen können, wenn Sie ernste persönliche Probleme haben?",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "keine"
+                },
+                {
+                    "value": "2",
+                    "label": "1 bis 2"
+                },
+                {
+                    "value": "3",
+                    "label": "3 bis 5"
+                },
+                {
+                    "value": "4",
+                    "label": "6 oder mehr"
+                }
+            ]
+        },
+        {
+            "name": "osss2",
+            "type": "integer",
+            "description": "Wie viel Anteilnahme und Interesse zeigen andere Menschen an dem, was Sie tun?",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "keine"
+                },
+                {
+                    "value": "2",
+                    "label": "wenig"
+                },
+                {
+                    "value": "3",
+                    "label": "weder viel noch wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "viel"
+                },
+                {
+                    "value": "5",
+                    "label": "sehr viel"
+                }
+            ]
+        },
+        {
+            "name": "osss3",
+            "type": "integer",
+            "description": "Wie einfach ist es für Sie, praktische Hilfe von Nachbarn zu erhalten, wenn Sie diese benötigen?",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "sehr schwierig"
+                },
+                {
+                    "value": "2",
+                    "label": "schwierig"
+                },
+                {
+                    "value": "3",
+                    "label": "möglich"
+                },
+                {
+                    "value": "4",
+                    "label": "einfach"
+                },
+                {
+                    "value": "5",
+                    "label": "sehr einfach"
+                }
+            ]
+        },
+        {
+            "name": "q2bfi1",
+            "type": "integer",
+            "description": "Inwieweit treffen die folgenden Aussagen auf Sie zu: Ich bin eher zurückhaltend, reserviert.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft überhaupt nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft eher nicht zu"
+                },
+                {
+                    "value": "3",
+                    "label": "weder noch"
+                },
+                {
+                    "value": "4",
+                    "label": "eher zutreffend"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "q2bfi2",
+            "type": "integer",
+            "description": "Inwieweit treffen die folgenden Aussagen auf Sie zu: Ich schenke anderen leicht Vertrauen, glaube an das Gute im Menschen.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft überhaupt nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft eher nicht zu"
+                },
+                {
+                    "value": "3",
+                    "label": "weder noch"
+                },
+                {
+                    "value": "4",
+                    "label": "eher zutreffend"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "q2bfi3",
+            "type": "integer",
+            "description": "Inwieweit treffen die folgenden Aussagen auf Sie zu: Ich bin bequem, neige zur Faulheit.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft überhaupt nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft eher nicht zu"
+                },
+                {
+                    "value": "3",
+                    "label": "weder noch"
+                },
+                {
+                    "value": "4",
+                    "label": "eher zutreffend"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "q2bfi4",
+            "type": "integer",
+            "description": "Inwieweit treffen die folgenden Aussagen auf Sie zu: Ich bin entspannt, lasse mich durch Stress nicht aus der Ruhe bringen.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft überhaupt nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft eher nicht zu"
+                },
+                {
+                    "value": "3",
+                    "label": "weder noch"
+                },
+                {
+                    "value": "4",
+                    "label": "eher zutreffend"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "q2bfi5",
+            "type": "integer",
+            "description": "Inwieweit treffen die folgenden Aussagen auf Sie zu: Ich habe nur wenig künstlerisches Interesse.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft überhaupt nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft eher nicht zu"
+                },
+                {
+                    "value": "3",
+                    "label": "weder noch"
+                },
+                {
+                    "value": "4",
+                    "label": "eher zutreffend"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "q2bfi6",
+            "type": "integer",
+            "description": "Inwieweit treffen die folgenden Aussagen auf Sie zu: Ich gehe aus mir heraus, bin gesellig.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft überhaupt nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft eher nicht zu"
+                },
+                {
+                    "value": "3",
+                    "label": "weder noch"
+                },
+                {
+                    "value": "4",
+                    "label": "eher zutreffend"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "q2bfi7",
+            "type": "integer",
+            "description": "Inwieweit treffen die folgenden Aussagen auf Sie zu: Ich neige dazu, andere zu kritisieren.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft überhaupt nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft eher nicht zu"
+                },
+                {
+                    "value": "3",
+                    "label": "weder noch"
+                },
+                {
+                    "value": "4",
+                    "label": "eher zutreffend"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "q2bfi8",
+            "type": "integer",
+            "description": "Inwieweit treffen die folgenden Aussagen auf Sie zu: Ich erledige Aufgaben gründlich.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft überhaupt nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft eher nicht zu"
+                },
+                {
+                    "value": "3",
+                    "label": "weder noch"
+                },
+                {
+                    "value": "4",
+                    "label": "eher zutreffend"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "q2bfi9",
+            "type": "integer",
+            "description": "Inwieweit treffen die folgenden Aussagen auf Sie zu: Ich werde leicht nervös und unsicher.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft überhaupt nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft eher nicht zu"
+                },
+                {
+                    "value": "3",
+                    "label": "weder noch"
+                },
+                {
+                    "value": "4",
+                    "label": "eher zutreffend"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "q2bfi10",
+            "type": "integer",
+            "description": "Inwieweit treffen die folgenden Aussagen auf Sie zu: Ich habe eine aktive Vorstellungskraft, bin fantasievoll.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft überhaupt nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft eher nicht zu"
+                },
+                {
+                    "value": "3",
+                    "label": "weder noch"
+                },
+                {
+                    "value": "4",
+                    "label": "eher zutreffend"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "boredi1",
+            "type": "integer",
+            "description": "Es fällt mir schwer, mich selbst zu unterhalten.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "7"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Stimme überhaupt nicht zu"
+                },
+                {
+                    "value": "7",
+                    "label": "Stimme voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "borede1",
+            "type": "integer",
+            "description": "Im Vergleich zu den meisten Menschen brauche ich mehr Anregung, um in Schwung zu kommen.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "7"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Stimme überhaupt nicht zu"
+                },
+                {
+                    "value": "7",
+                    "label": "Stimme voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "boredi2",
+            "type": "integer",
+            "description": "In den meisten Situationen fällt es mir schwer, etwas zu finden oder zu tun, was mein Interesse weckt.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "7"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Stimme überhaupt nicht zu"
+                },
+                {
+                    "value": "7",
+                    "label": "Stimme voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "borede2",
+            "type": "integer",
+            "description": "Wenn ich nicht gerade etwas Aufregendes oder gar Gefährliches tue, fühle ich mich halbtot und stumpf.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "7"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Stimme überhaupt nicht zu"
+                },
+                {
+                    "value": "7",
+                    "label": "Stimme voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "sop1",
+            "type": "integer",
+            "description": "Bitte schätzen Sie sich selbst ein: Wie optimistisch sind Sie im Allgemeinen?",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "7"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Gar nicht optimistisch"
+                },
+                {
+                    "value": "7",
+                    "label": "Sehr optimistisch"
+                }
+            ]
+        },
+        {
+            "name": "sop2",
+            "type": "integer",
+            "description": "Bitte schätzen Sie sich selbst ein: Wie pessimistisch sind Sie im Allgemeinen?",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "7"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Gar nicht optimistisch"
+                },
+                {
+                    "value": "7",
+                    "label": "Sehr optimistisch"
+                }
+            ]
+        },
+        {
+            "name": "q3scs1",
+            "type": "integer",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich beschrieb einem Freund meine Gefühle.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "q3scs2",
+            "type": "integer",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich sprach mit Menschen über die Situation, weil es mir besser ging, darüber zu sprechen.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "q3scs3",
+            "type": "integer",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich habe daran gearbeitet, die Probleme dieser Situation zu lösen.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "q3scs4",
+            "type": "integer",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich blieb standhaft und kämpfte für das, was ich in der Situation wollte.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "q3scs5",
+            "type": "integer",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich ließ mir von meinen Freunden helfen.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "q3scs6",
+            "type": "integer",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich wandte mich an einen Freund oder eine Freundin und bat ihn oder sie um Rat, wie ich die Situation ändern könnte.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "q3scs7",
+            "type": "integer",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich bewältigte Stress, indem ich klare Ziele setzte.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "q3scs8",
+            "type": "integer",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Auch wenn sich die Stresssituation verschlechtert hatte, konnte ich damit umgehen, indem ich eine andere Strategie verfolgte.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "q3scs9",
+            "type": "integer",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich wog meine Optionen sorgfältig ab.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "q3scs10",
+            "type": "integer",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten. <br>Ich habe aktiv gehandelt, um die Situation zu verbessern.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "q3scs11",
+            "type": "integer",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich weigerte mich, das, was passiert war, wahrzunehmen.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "q3scs12",
+            "type": "integer",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich versuchte durch Essen, Trinken, Rauchen oder Medikamente, es mir besser gehen zu lassen.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "q3scs13",
+            "type": "integer",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich hatte Tagträume von besseren Zeiten.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "q3scs14",
+            "type": "integer",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich fantasierte darüber, wie die Dinge anders hätten laufen können.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "q3scs15",
+            "type": "integer",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich suchte mir gern Herausforderungen und ging dafür auch Wagnisse ein.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "q3scs16",
+            "type": "integer",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich malte mir meine Wunschträume genau aus, um sie zu verwirklichen.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "sit1",
+            "type": "integer",
+            "description": "Haben Sie bei der Beantwortung der vergangenen Aussagen zum Umgang mit Herausforderungen im Leben an eine bestimmte Situation gedacht?",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "2"
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "Nein"
+                },
+                {
+                    "value": "1",
+                    "label": "Ja, ich habe an eine Situation gedacht"
+                },
+                {
+                    "value": "2",
+                    "label": "Ja, ich habe an mehrere Situationen gedacht"
+                }
+            ]
+        },
+        {
+            "name": "sit2",
+            "type": "integer",
+            "description": "Bitte wählen Sie aus den nachstehenden Kategorien diejenige aus, die am ehesten zu Ihrer erinnerten Situation passt:",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "8"
+            },
+            "missingValues": [
+                {
+                    "value": "-99",
+                    "label": "Systematisch fehlende Werte (z.B. bei Mehrfachantworten)"
+                }
+            ],
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Gesundheit (z.B. Krankheit, Schmerz, Unfall, Diagnose)"
+                },
+                {
+                    "value": "2",
+                    "label": "Familie und soziale Beziehungen (z.B. Verlust, Trennung, Erziehung, Geburt)"
+                },
+                {
+                    "value": "3",
+                    "label": "Arbeit (z.B. Jobverlust oder Wechsel, Konflikt, Mobbing)"
+                },
+                {
+                    "value": "4",
+                    "label": "Finanzielle Belastungen (z.B. Kreditzahlungen, gestiegene Lebenshaltungskosten)"
+                },
+                {
+                    "value": "5",
+                    "label": "Gewalt (z.B. emotional, körperlich)"
+                },
+                {
+                    "value": "6",
+                    "label": "Diskriminierung (z.B. aufgrund des Aussehens, ethnischer Zugehörigkeit)"
+                },
+                {
+                    "value": "7",
+                    "label": "Krieg oder Terrorismus (z.B. Verfolgung, Flucht)"
+                },
+                {
+                    "value": "8",
+                    "label": "Andere, nicht genannte"
+                }
+            ]
+        },
+        {
+            "name": "sit3r1",
+            "type": "integer",
+            "description": "Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: Gesundheit (z.B. Krankheit, Schmerz, Unfall, Diagnose)",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "1"
+            },
+            "missingValues": [
+                {
+                    "value": "-99",
+                    "label": "Systematisch fehlende Werte (z.B. bei Mehrfachantworten)"
+                }
+            ],
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "Unchecked"
+                },
+                {
+                    "value": "1",
+                    "label": "Checked"
+                }
+            ]
+        },
+        {
+            "name": "sit3r2",
+            "type": "integer",
+            "description": "Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: Familie und soziale Beziehungen (z.B. Verlust, Trennung, Erziehung, Geburt)",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "1"
+            },
+            "missingValues": [
+                {
+                    "value": "-99",
+                    "label": "Systematisch fehlende Werte (z.B. bei Mehrfachantworten)"
+                }
+            ],
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "Unchecked"
+                },
+                {
+                    "value": "1",
+                    "label": "Checked"
+                }
+            ]
+        },
+        {
+            "name": "sit3r3",
+            "type": "integer",
+            "description": "Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: Arbeit (z.B. Jobverlust oder Wechsel, Konflikt, Mobbing)",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "1"
+            },
+            "missingValues": [
+                {
+                    "value": "-99",
+                    "label": "Systematisch fehlende Werte (z.B. bei Mehrfachantworten)"
+                }
+            ],
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "Unchecked"
+                },
+                {
+                    "value": "1",
+                    "label": "Checked"
+                }
+            ]
+        },
+        {
+            "name": "sit3r4",
+            "type": "integer",
+            "description": "Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: Finanzielle Belastungen (z.B. Kreditzahlungen, gestiegene Lebenshaltungskosten)",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "1"
+            },
+            "missingValues": [
+                {
+                    "value": "-99",
+                    "label": "Systematisch fehlende Werte (z.B. bei Mehrfachantworten)"
+                }
+            ],
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "Unchecked"
+                },
+                {
+                    "value": "1",
+                    "label": "Checked"
+                }
+            ]
+        },
+        {
+            "name": "sit3r5",
+            "type": "integer",
+            "description": "Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: Gewalt (z.B. emotional, körperlich)",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "1"
+            },
+            "missingValues": [
+                {
+                    "value": "-99",
+                    "label": "Systematisch fehlende Werte (z.B. bei Mehrfachantworten)"
+                }
+            ],
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "Unchecked"
+                },
+                {
+                    "value": "1",
+                    "label": "Checked"
+                }
+            ]
+        },
+        {
+            "name": "sit3r6",
+            "type": "integer",
+            "description": "Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: Diskriminierung (z.B. aufgrund des Aussehens, ethnischer Zugehörigkeit)",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "1"
+            },
+            "missingValues": [
+                {
+                    "value": "-99",
+                    "label": "Systematisch fehlende Werte (z.B. bei Mehrfachantworten)"
+                }
+            ],
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "Unchecked"
+                },
+                {
+                    "value": "1",
+                    "label": "Checked"
+                }
+            ]
+        },
+        {
+            "name": "sit3r7",
+            "type": "integer",
+            "description": "Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: Krieg oder Terrorismus (z.B. Verfolgung, Flucht)",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "1"
+            },
+            "missingValues": [
+                {
+                    "value": "-99",
+                    "label": "Systematisch fehlende Werte (z.B. bei Mehrfachantworten)"
+                }
+            ],
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "Unchecked"
+                },
+                {
+                    "value": "1",
+                    "label": "Checked"
+                }
+            ]
+        },
+        {
+            "name": "sit3r8",
+            "type": "integer",
+            "description": "Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: Andere, nicht genannte",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "1"
+            },
+            "missingValues": [
+                {
+                    "value": "-99",
+                    "label": "Systematisch fehlende Werte (z.B. bei Mehrfachantworten)"
+                }
+            ],
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "Unchecked"
+                },
+                {
+                    "value": "1",
+                    "label": "Checked"
+                }
+            ]
+        },
+        {
+            "name": "q4wemwbs1",
+            "type": "integer",
+            "description": "Abschließend möchten wir Ihnen noch einige Fragen zu Ihrer Person und Ihrem Wohlbefinden stellen. Nachfolgend stehen einige Aussagen zu Gefühlen und Gedanken. Bitte kreuzen Sie die Antwort an, die Ihre Erfahrungen in den letzten 2 Wochen am besten beschreibt: Ich habe mich in Bezug auf die Zukunft optimistisch gefühlt.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "niemals"
+                },
+                {
+                    "value": "2",
+                    "label": "selten"
+                },
+                {
+                    "value": "3",
+                    "label": "manchmal"
+                },
+                {
+                    "value": "4",
+                    "label": "häufig"
+                },
+                {
+                    "value": "5",
+                    "label": "immer"
+                }
+            ]
+        },
+        {
+            "name": "q4wemwbs2",
+            "type": "integer",
+            "description": "Abschließend möchten wir Ihnen noch einige Fragen zu Ihrer Person und Ihrem Wohlbefinden stellen. Nachfolgend stehen einige Aussagen zu Gefühlen und Gedanken. Bitte kreuzen Sie die Antwort an, die Ihre Erfahrungen in den letzten 2 Wochen am besten beschreibt: Ich habe mich nützlich gefühlt.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "niemals"
+                },
+                {
+                    "value": "2",
+                    "label": "selten"
+                },
+                {
+                    "value": "3",
+                    "label": "manchmal"
+                },
+                {
+                    "value": "4",
+                    "label": "häufig"
+                },
+                {
+                    "value": "5",
+                    "label": "immer"
+                }
+            ]
+        },
+        {
+            "name": "q4wemwbs3",
+            "type": "integer",
+            "description": "Abschließend möchten wir Ihnen noch einige Fragen zu Ihrer Person und Ihrem Wohlbefinden stellen. Nachfolgend stehen einige Aussagen zu Gefühlen und Gedanken. Bitte kreuzen Sie die Antwort an, die Ihre Erfahrungen in den letzten 2 Wochen am besten beschreibt: Ich habe mich entspannt gefühlt.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "niemals"
+                },
+                {
+                    "value": "2",
+                    "label": "selten"
+                },
+                {
+                    "value": "3",
+                    "label": "manchmal"
+                },
+                {
+                    "value": "4",
+                    "label": "häufig"
+                },
+                {
+                    "value": "5",
+                    "label": "immer"
+                }
+            ]
+        },
+        {
+            "name": "q4wemwbs6",
+            "type": "integer",
+            "description": "Abschließend möchten wir Ihnen noch einige Fragen zu Ihrer Person und Ihrem Wohlbefinden stellen. Nachfolgend stehen einige Aussagen zu Gefühlen und Gedanken. Bitte kreuzen Sie die Antwort an, die Ihre Erfahrungen in den letzten 2 Wochen am besten beschreibt: Ich bin mit Problemen gut umgegangen.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "niemals"
+                },
+                {
+                    "value": "2",
+                    "label": "selten"
+                },
+                {
+                    "value": "3",
+                    "label": "manchmal"
+                },
+                {
+                    "value": "4",
+                    "label": "häufig"
+                },
+                {
+                    "value": "5",
+                    "label": "immer"
+                }
+            ]
+        },
+        {
+            "name": "q4wemwbs7",
+            "type": "integer",
+            "description": "Abschließend möchten wir Ihnen noch einige Fragen zu Ihrer Person und Ihrem Wohlbefinden stellen. Nachfolgend stehen einige Aussagen zu Gefühlen und Gedanken. Bitte kreuzen Sie die Antwort an, die Ihre Erfahrungen in den letzten 2 Wochen am besten beschreibt: Ich konnte klar denken.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "niemals"
+                },
+                {
+                    "value": "2",
+                    "label": "selten"
+                },
+                {
+                    "value": "3",
+                    "label": "manchmal"
+                },
+                {
+                    "value": "4",
+                    "label": "häufig"
+                },
+                {
+                    "value": "5",
+                    "label": "immer"
+                }
+            ]
+        },
+        {
+            "name": "q4wemwbs9",
+            "type": "integer",
+            "description": "Abschließend möchten wir Ihnen noch einige Fragen zu Ihrer Person und Ihrem Wohlbefinden stellen. Nachfolgend stehen einige Aussagen zu Gefühlen und Gedanken. Bitte kreuzen Sie die Antwort an, die Ihre Erfahrungen in den letzten 2 Wochen am besten beschreibt: Ich habe mich anderen Menschen nahe gefühlt.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "niemals"
+                },
+                {
+                    "value": "2",
+                    "label": "selten"
+                },
+                {
+                    "value": "3",
+                    "label": "manchmal"
+                },
+                {
+                    "value": "4",
+                    "label": "häufig"
+                },
+                {
+                    "value": "5",
+                    "label": "immer"
+                }
+            ]
+        },
+        {
+            "name": "q4wemwbs11",
+            "type": "integer",
+            "description": "Abschließend möchten wir Ihnen noch einige Fragen zu Ihrer Person und Ihrem Wohlbefinden stellen. Nachfolgend stehen einige Aussagen zu Gefühlen und Gedanken. Bitte kreuzen Sie die Antwort an, die Ihre Erfahrungen in den letzten 2 Wochen am besten beschreibt: Ich war in der Lage, Entscheidungen zu treffen.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "niemals"
+                },
+                {
+                    "value": "2",
+                    "label": "selten"
+                },
+                {
+                    "value": "3",
+                    "label": "manchmal"
+                },
+                {
+                    "value": "4",
+                    "label": "häufig"
+                },
+                {
+                    "value": "5",
+                    "label": "immer"
+                }
+            ]
+        },
+        {
+            "name": "mehm1",
+            "type": "integer",
+            "description": "Wie ist Ihr Gesundheitszustand im Allgemeinen?",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "5",
+                    "label": "sehr gut"
+                },
+                {
+                    "value": "4",
+                    "label": "gut"
+                },
+                {
+                    "value": "3",
+                    "label": "mittelmäßig"
+                },
+                {
+                    "value": "2",
+                    "label": "schlecht"
+                },
+                {
+                    "value": "1",
+                    "label": "sehr schlecht"
+                }
+            ]
+        },
+        {
+            "name": "chronr1",
+            "type": "integer",
+            "description": "Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: Zuckerkrankheit/Diabetes, kein Schwangerschaftsdiabetes",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "3"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "ja"
+                },
+                {
+                    "value": "2",
+                    "label": "nein"
+                },
+                {
+                    "value": "3",
+                    "label": "weiß nicht"
+                }
+            ]
+        },
+        {
+            "name": "chronr2",
+            "type": "integer",
+            "description": "Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: Herzinfarkt",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "3"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "ja"
+                },
+                {
+                    "value": "2",
+                    "label": "nein"
+                },
+                {
+                    "value": "3",
+                    "label": "weiß nicht"
+                }
+            ]
+        },
+        {
+            "name": "chronr3",
+            "type": "integer",
+            "description": "Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: Chronische Beschwerden infolge eines Herzinfarkts",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "3"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "ja"
+                },
+                {
+                    "value": "2",
+                    "label": "nein"
+                },
+                {
+                    "value": "3",
+                    "label": "weiß nicht"
+                }
+            ]
+        },
+        {
+            "name": "chronr4",
+            "type": "integer",
+            "description": "Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: Koronare Herzerkrankung oder Angina Pectoris",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "3"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "ja"
+                },
+                {
+                    "value": "2",
+                    "label": "nein"
+                },
+                {
+                    "value": "3",
+                    "label": "weiß nicht"
+                }
+            ]
+        },
+        {
+            "name": "chronr5",
+            "type": "integer",
+            "description": "Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: Schlaganfall",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "3"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "ja"
+                },
+                {
+                    "value": "2",
+                    "label": "nein"
+                },
+                {
+                    "value": "3",
+                    "label": "weiß nicht"
+                }
+            ]
+        },
+        {
+            "name": "chronr6",
+            "type": "integer",
+            "description": "Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: Chronische Beschwerden infolge eines Schlaganfalls",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "3"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "ja"
+                },
+                {
+                    "value": "2",
+                    "label": "nein"
+                },
+                {
+                    "value": "3",
+                    "label": "weiß nicht"
+                }
+            ]
+        },
+        {
+            "name": "chronr7",
+            "type": "integer",
+            "description": "Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: chronische Bronchitis",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "3"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "ja"
+                },
+                {
+                    "value": "2",
+                    "label": "nein"
+                },
+                {
+                    "value": "3",
+                    "label": "weiß nicht"
+                }
+            ]
+        },
+        {
+            "name": "chronr8",
+            "type": "integer",
+            "description": "Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: chronisch obstruktive Lungenerkrankung, Lungenemphysem",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "3"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "ja"
+                },
+                {
+                    "value": "2",
+                    "label": "nein"
+                },
+                {
+                    "value": "3",
+                    "label": "weiß nicht"
+                }
+            ]
+        },
+        {
+            "name": "chronr9",
+            "type": "integer",
+            "description": "Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: Hautkrebs",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "3"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "ja"
+                },
+                {
+                    "value": "2",
+                    "label": "nein"
+                },
+                {
+                    "value": "3",
+                    "label": "weiß nicht"
+                }
+            ]
+        },
+        {
+            "name": "chronr10",
+            "type": "integer",
+            "description": "Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: Lungenkrebs",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "3"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "ja"
+                },
+                {
+                    "value": "2",
+                    "label": "nein"
+                },
+                {
+                    "value": "3",
+                    "label": "weiß nicht"
+                }
+            ]
+        },
+        {
+            "name": "chronr11",
+            "type": "integer",
+            "description": "Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: Darmkrebs",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "3"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "ja"
+                },
+                {
+                    "value": "2",
+                    "label": "nein"
+                },
+                {
+                    "value": "3",
+                    "label": "weiß nicht"
+                }
+            ]
+        },
+        {
+            "name": "chronr12",
+            "type": "integer",
+            "description": "Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: Brustkrebs",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "3"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "ja"
+                },
+                {
+                    "value": "2",
+                    "label": "nein"
+                },
+                {
+                    "value": "3",
+                    "label": "weiß nicht"
+                }
+            ]
+        },
+        {
+            "name": "chronr13",
+            "type": "integer",
+            "description": "Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: Prostatakrebs",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "3"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "ja"
+                },
+                {
+                    "value": "2",
+                    "label": "nein"
+                },
+                {
+                    "value": "3",
+                    "label": "weiß nicht"
+                }
+            ]
+        },
+        {
+            "name": "chronr14",
+            "type": "integer",
+            "description": "Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: Depressive Störung",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "3"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "ja"
+                },
+                {
+                    "value": "2",
+                    "label": "nein"
+                },
+                {
+                    "value": "3",
+                    "label": "weiß nicht"
+                }
+            ]
+        },
+        {
+            "name": "chronr15",
+            "type": "integer",
+            "description": "Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: Angststörung",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "3"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "ja"
+                },
+                {
+                    "value": "2",
+                    "label": "nein"
+                },
+                {
+                    "value": "3",
+                    "label": "weiß nicht"
+                }
+            ]
+        },
+        {
+            "name": "chronr16",
+            "type": "integer",
+            "description": "Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: Essstörung",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "3"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "ja"
+                },
+                {
+                    "value": "2",
+                    "label": "nein"
+                },
+                {
+                    "value": "3",
+                    "label": "weiß nicht"
+                }
+            ]
+        },
+        {
+            "name": "chronr17",
+            "type": "integer",
+            "description": "Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: Anpassungsstörung (z.B. posttraumatische Belastungsstörung, PTBS)",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "3"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "ja"
+                },
+                {
+                    "value": "2",
+                    "label": "nein"
+                },
+                {
+                    "value": "3",
+                    "label": "weiß nicht"
+                }
+            ]
+        },
+        {
+            "name": "chronr18",
+            "type": "integer",
+            "description": "Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: Burnout-Syndrom",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "3"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "ja"
+                },
+                {
+                    "value": "2",
+                    "label": "nein"
+                },
+                {
+                    "value": "3",
+                    "label": "weiß nicht"
+                }
+            ]
+        },
+        {
+            "name": "chronr19",
+            "type": "integer",
+            "description": "Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: Aufmerksamkeitsdefizit-Hyperaktivitäts-Störung/ Aufmerksamkeitsdefizit-Störung (ADHS bzw. ADS)",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "3"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "ja"
+                },
+                {
+                    "value": "2",
+                    "label": "nein"
+                },
+                {
+                    "value": "3",
+                    "label": "weiß nicht"
+                }
+            ]
+        },
+        {
+            "name": "chronr20",
+            "type": "integer",
+            "description": "Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: Persönlichkeitsstörung (z.B. emotional instabile oder narzisstische Persönlichkeitsstörung)",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "3"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "ja"
+                },
+                {
+                    "value": "2",
+                    "label": "nein"
+                },
+                {
+                    "value": "3",
+                    "label": "weiß nicht"
+                }
+            ]
+        },
+        {
+            "name": "chronr21",
+            "type": "integer",
+            "description": "Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: Andere, nicht genannte",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "3"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "ja"
+                },
+                {
+                    "value": "2",
+                    "label": "nein"
+                },
+                {
+                    "value": "3",
+                    "label": "weiß nicht"
+                }
+            ]
+        },
+        {
+            "name": "q5funkt1",
+            "type": "integer",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Können Sie Hausarbeiten erledigen, z. B. Staubsaugen oder Gartenarbeit?",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "4",
+                    "label": "ohne jede Schwierigkeit"
+                },
+                {
+                    "value": "3",
+                    "label": "mit geringen Schwierigkeiten"
+                },
+                {
+                    "value": "2",
+                    "label": "mit einigen Schwierigkeiten"
+                },
+                {
+                    "value": "1",
+                    "label": "mit großen Schwierigkeiten"
+                },
+                {
+                    "value": "0",
+                    "label": "kann ich gar nicht"
+                }
+            ]
+        },
+        {
+            "name": "q5funkt2",
+            "type": "integer",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Können Sie mit normaler Geschwindigkeit Treppen hoch- und runtergehen?",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "4",
+                    "label": "ohne jede Schwierigkeit"
+                },
+                {
+                    "value": "3",
+                    "label": "mit geringen Schwierigkeiten"
+                },
+                {
+                    "value": "2",
+                    "label": "mit einigen Schwierigkeiten"
+                },
+                {
+                    "value": "1",
+                    "label": "mit großen Schwierigkeiten"
+                },
+                {
+                    "value": "0",
+                    "label": "kann ich gar nicht"
+                }
+            ]
+        },
+        {
+            "name": "q5funkt3",
+            "type": "integer",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Können Sie mindestens 15 Minuten lang spazieren gehen?",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "4",
+                    "label": "ohne jede Schwierigkeit"
+                },
+                {
+                    "value": "3",
+                    "label": "mit geringen Schwierigkeiten"
+                },
+                {
+                    "value": "2",
+                    "label": "mit einigen Schwierigkeiten"
+                },
+                {
+                    "value": "1",
+                    "label": "mit großen Schwierigkeiten"
+                },
+                {
+                    "value": "0",
+                    "label": "kann ich gar nicht"
+                }
+            ]
+        },
+        {
+            "name": "q5funkt4",
+            "type": "integer",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Können Sie Besorgungen machen und einkaufen gehen?",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "4",
+                    "label": "ohne jede Schwierigkeit"
+                },
+                {
+                    "value": "3",
+                    "label": "mit geringen Schwierigkeiten"
+                },
+                {
+                    "value": "2",
+                    "label": "mit einigen Schwierigkeiten"
+                },
+                {
+                    "value": "1",
+                    "label": "mit großen Schwierigkeiten"
+                },
+                {
+                    "value": "0",
+                    "label": "kann ich gar nicht"
+                }
+            ]
+        },
+        {
+            "name": "q6teilhab1",
+            "type": "integer",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Es fällt mir schwer, allen meinen regelmäßigen Freizeitaktivitäten mit anderen nachzugehen.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "nie"
+                },
+                {
+                    "value": "2",
+                    "label": "selten"
+                },
+                {
+                    "value": "3",
+                    "label": "manchmal"
+                },
+                {
+                    "value": "4",
+                    "label": "oft"
+                },
+                {
+                    "value": "5",
+                    "label": "immer"
+                }
+            ]
+        },
+        {
+            "name": "q6teilhab2",
+            "type": "integer",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit meiner Familie machen möchte.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "nie"
+                },
+                {
+                    "value": "2",
+                    "label": "selten"
+                },
+                {
+                    "value": "3",
+                    "label": "manchmal"
+                },
+                {
+                    "value": "4",
+                    "label": "oft"
+                },
+                {
+                    "value": "5",
+                    "label": "immer"
+                }
+            ]
+        },
+        {
+            "name": "q6teilhab3",
+            "type": "integer",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Es fällt mir schwer, meine gewohnte Arbeit zu erledigen (einschließlich der Arbeit zu Hause).",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "nie"
+                },
+                {
+                    "value": "2",
+                    "label": "selten"
+                },
+                {
+                    "value": "3",
+                    "label": "manchmal"
+                },
+                {
+                    "value": "4",
+                    "label": "oft"
+                },
+                {
+                    "value": "5",
+                    "label": "immer"
+                }
+            ]
+        },
+        {
+            "name": "q6teilhab4",
+            "type": "integer",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit meinen Freunden machen möchte.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "nie"
+                },
+                {
+                    "value": "2",
+                    "label": "selten"
+                },
+                {
+                    "value": "3",
+                    "label": "manchmal"
+                },
+                {
+                    "value": "4",
+                    "label": "oft"
+                },
+                {
+                    "value": "5",
+                    "label": "immer"
+                }
+            ]
+        },
+        {
+            "name": "q7fatig1",
+            "type": "integer",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Ich war erschöpft.",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "überhaupt nicht"
+                },
+                {
+                    "value": "1",
+                    "label": "ein wenig"
+                },
+                {
+                    "value": "2",
+                    "label": "mäßig"
+                },
+                {
+                    "value": "3",
+                    "label": "ziemlich"
+                },
+                {
+                    "value": "4",
+                    "label": "sehr"
+                }
+            ]
+        },
+        {
+            "name": "q7fatig2",
+            "type": "integer",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Es fiel mir schwer etwas anzufangen, weil ich müde war.",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "überhaupt nicht"
+                },
+                {
+                    "value": "1",
+                    "label": "ein wenig"
+                },
+                {
+                    "value": "2",
+                    "label": "mäßig"
+                },
+                {
+                    "value": "3",
+                    "label": "ziemlich"
+                },
+                {
+                    "value": "4",
+                    "label": "sehr"
+                }
+            ]
+        },
+        {
+            "name": "q7fatig3",
+            "type": "integer",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Wie ausgelaugt fühlten Sie sich im Allgemeinen?",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "überhaupt nicht"
+                },
+                {
+                    "value": "1",
+                    "label": "ein wenig"
+                },
+                {
+                    "value": "2",
+                    "label": "mäßig"
+                },
+                {
+                    "value": "3",
+                    "label": "ziemlich"
+                },
+                {
+                    "value": "4",
+                    "label": "sehr"
+                }
+            ]
+        },
+        {
+            "name": "q7fatig4",
+            "type": "integer",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Wie erschöpft waren Sie im Allgemeinen?",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "überhaupt nicht"
+                },
+                {
+                    "value": "1",
+                    "label": "ein wenig"
+                },
+                {
+                    "value": "2",
+                    "label": "mäßig"
+                },
+                {
+                    "value": "3",
+                    "label": "ziemlich"
+                },
+                {
+                    "value": "4",
+                    "label": "sehr"
+                }
+            ]
+        },
+        {
+            "name": "q8angst1",
+            "type": "integer",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Ich fürchtete mich.",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "nie"
+                },
+                {
+                    "value": "1",
+                    "label": "selten"
+                },
+                {
+                    "value": "2",
+                    "label": "manchmal"
+                },
+                {
+                    "value": "3",
+                    "label": "oft"
+                },
+                {
+                    "value": "4",
+                    "label": "immer"
+                }
+            ]
+        },
+        {
+            "name": "q8angst2",
+            "type": "integer",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Ich fand es schwer, auf etwas anderes zu achten als auf meine Angst.",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "nie"
+                },
+                {
+                    "value": "1",
+                    "label": "selten"
+                },
+                {
+                    "value": "2",
+                    "label": "manchmal"
+                },
+                {
+                    "value": "3",
+                    "label": "oft"
+                },
+                {
+                    "value": "4",
+                    "label": "immer"
+                }
+            ]
+        },
+        {
+            "name": "q8angst3",
+            "type": "integer",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Meine Sorgen haben mich überwältigt.",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "nie"
+                },
+                {
+                    "value": "1",
+                    "label": "selten"
+                },
+                {
+                    "value": "2",
+                    "label": "manchmal"
+                },
+                {
+                    "value": "3",
+                    "label": "oft"
+                },
+                {
+                    "value": "4",
+                    "label": "immer"
+                }
+            ]
+        },
+        {
+            "name": "q8angst4",
+            "type": "integer",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Ich fühlte mich unruhig.",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "nie"
+                },
+                {
+                    "value": "1",
+                    "label": "selten"
+                },
+                {
+                    "value": "2",
+                    "label": "manchmal"
+                },
+                {
+                    "value": "3",
+                    "label": "oft"
+                },
+                {
+                    "value": "4",
+                    "label": "immer"
+                }
+            ]
+        },
+        {
+            "name": "q8depr1",
+            "type": "integer",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Ich fühlte mich wertlos.",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "nie"
+                },
+                {
+                    "value": "1",
+                    "label": "selten"
+                },
+                {
+                    "value": "2",
+                    "label": "manchmal"
+                },
+                {
+                    "value": "3",
+                    "label": "oft"
+                },
+                {
+                    "value": "4",
+                    "label": "immer"
+                }
+            ]
+        },
+        {
+            "name": "q8depr2",
+            "type": "integer",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Ich fühlte mich hilflos.",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "nie"
+                },
+                {
+                    "value": "1",
+                    "label": "selten"
+                },
+                {
+                    "value": "2",
+                    "label": "manchmal"
+                },
+                {
+                    "value": "3",
+                    "label": "oft"
+                },
+                {
+                    "value": "4",
+                    "label": "immer"
+                }
+            ]
+        },
+        {
+            "name": "q8depr3",
+            "type": "integer",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Ich fühlte mich niedergeschlagen.",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "nie"
+                },
+                {
+                    "value": "1",
+                    "label": "selten"
+                },
+                {
+                    "value": "2",
+                    "label": "manchmal"
+                },
+                {
+                    "value": "3",
+                    "label": "oft"
+                },
+                {
+                    "value": "4",
+                    "label": "immer"
+                }
+            ]
+        },
+        {
+            "name": "q8depr4",
+            "type": "integer",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Ich fühlte mich hoffnungslos.",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "nie"
+                },
+                {
+                    "value": "1",
+                    "label": "selten"
+                },
+                {
+                    "value": "2",
+                    "label": "manchmal"
+                },
+                {
+                    "value": "3",
+                    "label": "oft"
+                },
+                {
+                    "value": "4",
+                    "label": "immer"
+                }
+            ]
+        },
+        {
+            "name": "q9schlaf1",
+            "type": "integer",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "sehr schlecht"
+                },
+                {
+                    "value": "2",
+                    "label": "schlecht"
+                },
+                {
+                    "value": "3",
+                    "label": "mäßig"
+                },
+                {
+                    "value": "4",
+                    "label": "gut"
+                },
+                {
+                    "value": "5",
+                    "label": "sehr gut"
+                }
+            ]
+        },
+        {
+            "name": "q10schlaf2",
+            "type": "integer",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Mein Schlaf war erfrischend.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "5",
+                    "label": "überhaupt nicht"
+                },
+                {
+                    "value": "4",
+                    "label": "ein wenig"
+                },
+                {
+                    "value": "3",
+                    "label": "mäßig"
+                },
+                {
+                    "value": "2",
+                    "label": "ziemlich"
+                },
+                {
+                    "value": "1",
+                    "label": "sehr"
+                }
+            ]
+        },
+        {
+            "name": "q10schlaf3",
+            "type": "integer",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Ich hatte Schlafprobleme.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "5",
+                    "label": "überhaupt nicht"
+                },
+                {
+                    "value": "4",
+                    "label": "ein wenig"
+                },
+                {
+                    "value": "3",
+                    "label": "mäßig"
+                },
+                {
+                    "value": "2",
+                    "label": "ziemlich"
+                },
+                {
+                    "value": "1",
+                    "label": "sehr"
+                }
+            ]
+        },
+        {
+            "name": "q10schlaf4",
+            "type": "integer",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Ich hatte Schwierigkeiten einzuschlafen.",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5"
+            },
+            "categories": [
+                {
+                    "value": "5",
+                    "label": "überhaupt nicht"
+                },
+                {
+                    "value": "4",
+                    "label": "ein wenig"
+                },
+                {
+                    "value": "3",
+                    "label": "mäßig"
+                },
+                {
+                    "value": "2",
+                    "label": "ziemlich"
+                },
+                {
+                    "value": "1",
+                    "label": "sehr"
+                }
+            ]
+        },
+        {
+            "name": "q11schmerz1",
+            "type": "integer",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Wie sehr beeinträchtigen Schmerzen Ihre Alltagsaktivitäten?",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "überhaupt nicht"
+                },
+                {
+                    "value": "1",
+                    "label": "ein wenig"
+                },
+                {
+                    "value": "2",
+                    "label": "mäßig"
+                },
+                {
+                    "value": "3",
+                    "label": "ziemlich"
+                },
+                {
+                    "value": "4",
+                    "label": "sehr"
+                }
+            ]
+        },
+        {
+            "name": "q11schmerz2",
+            "type": "integer",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Wie sehr beeinträchtigen Schmerzen Ihre häuslichen Tätigkeiten?",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "überhaupt nicht"
+                },
+                {
+                    "value": "1",
+                    "label": "ein wenig"
+                },
+                {
+                    "value": "2",
+                    "label": "mäßig"
+                },
+                {
+                    "value": "3",
+                    "label": "ziemlich"
+                },
+                {
+                    "value": "4",
+                    "label": "sehr"
+                }
+            ]
+        },
+        {
+            "name": "q11schmerz3",
+            "type": "integer",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Wie sehr beeinträchtigen Schmerzen Ihre Fähigkeiten, an sozialen Aktivitäten teilzunehmen?",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "überhaupt nicht"
+                },
+                {
+                    "value": "1",
+                    "label": "ein wenig"
+                },
+                {
+                    "value": "2",
+                    "label": "mäßig"
+                },
+                {
+                    "value": "3",
+                    "label": "ziemlich"
+                },
+                {
+                    "value": "4",
+                    "label": "sehr"
+                }
+            ]
+        },
+        {
+            "name": "q11schmerz4",
+            "type": "integer",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Wie sehr beeinträchtigen Schmerzen Sie bei Ihrer Hausarbeit?",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "4"
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "überhaupt nicht"
+                },
+                {
+                    "value": "1",
+                    "label": "ein wenig"
+                },
+                {
+                    "value": "2",
+                    "label": "mäßig"
+                },
+                {
+                    "value": "3",
+                    "label": "ziemlich"
+                },
+                {
+                    "value": "4",
+                    "label": "sehr"
+                }
+            ]
+        },
+        {
+            "name": "schmerz5",
+            "type": "integer",
+            "description": "Schmerzintensität In den letzten 7 Tagen, wie würden Sie Ihre Schmerzen im Allgemeinen einschätzen?",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "10"
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "Keine Schmerzen"
+                },
+                {
+                    "value": "10",
+                    "label": "Schlimmste vorstellbare Schmerzen"
+                }
+            ]
+        },
+        {
+            "name": "vlist",
+            "type": "integer",
+            "description": "Participant source",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "2"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Sample UK (list=2)"
+                },
+                {
+                    "value": "2",
+                    "label": "Sample DE (list=1)"
+                }
+            ]
+        },
+        {
+            "name": "qtime",
+            "type": "number",
+            "description": "Interviewzeit in Sekunden",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "999999"
+            },
+            "decimalChar": "."
+        },
+        {
+            "name": "vdecLang",
+            "type": "integer",
+            "description": "Sprach-Tracker",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "2"
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "German"
+                },
+                {
+                    "value": "2",
+                    "label": "English (UK)"
+                }
+            ]
+        },
+        {
+            "name": "start_date",
+            "type": "string",
+            "description": "Startzeitpunkt der Umfrage"
+        }
+    ]
+}

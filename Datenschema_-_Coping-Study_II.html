@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; line-height:1.6; margin:0; padding:20px; background:#f6f8fa; color:#24292e; }
+.content { max-width:80%; margin:0 auto; background:#fff; padding:20px; border-radius:8px; box-shadow:0 4px 6px rgba(0,0,0,.1); }
+h1 { font-size:2em; margin-bottom:.5em; }
+p { margin-bottom:1.5em; color:#586069; }
+table { width:100%; border-collapse:collapse; margin-bottom:1.5em; background:#fff; border:1px solid #dfe2e5; }
+th, td { padding:8px 12px; border:1px solid #dfe2e5; text-align:left; }
+th { background:#f6f8fa; font-weight:bold; }
+/* Gruppiertes Zebra nach erster Spalte (record) */
+.row-even td { background:#f6f8fa; }
+.row-odd  td { background:#ffffff; }
+/* Beschreibungsspalte darf umbrechen */
+td:nth-child(3), th:nth-child(3) { max-width:1300px; word-wrap:break-word; white-space:normal; }
+</style>
+</head>
+<body>
+<div class="content">
+<h1>Datenschema | Umgang mit Herausforderungen im Leben - Coping-Studie II</h1>
+<p>Das vorliegenden Datenschema ist eine eindeutige, vollständige und maschinenlesbare Repräsentation der beantragbaren Rohdaten der Studie 'Umgang mit Herausforderungen im Leben - Coping-Studie II' mit allen Details. Das Datenschema orientiert sich am Datapackage-Format (v2). Informationen zum Datapackage Data Standard finden Sie unter <a href="https://datapackage.org/." target="_blank">https://datapackage.org/.</a> Mehr Information über den Datensatz finden sie auf Zenodo (<a href="https://doi.org/10.5281/zenodo.12542554" target="_blank">https://doi.org/10.5281/zenodo.12542554</a>) oder Github (<a href="https://github.com/robert-koch-institut/Umgang_mit_Herausforderungen_im_Leben_Coping-Studie_2" target="_blank">https://github.com/robert-koch-institut/Umgang_mit_Herausforderungen_im_Leben_Coping-Studie_2</a>)</p>
+<table>
+<tr>
+<th>Variable</th><th>Typ</th><th>Beschreibung</th><th>Werte</th><th>Werte Definition</th>
+</tr>
+<tr class="row-even"><td rowspan="1">record</td><td rowspan="1">integer</td><td rowspan="1">Record number (Open numeric response)</td><td>-</td><td>-</td></tr>
+<tr class="row-odd"><td rowspan="1">date</td><td rowspan="1">string</td><td rowspan="1">Completion time and date (Open text response)</td><td>-</td><td>-</td></tr>
+<tr class="row-even"><td rowspan="2">rec_sample</td><td rowspan="2">integer</td><td rowspan="2">Sample</td><td>1</td><td>DE</td></tr>
+<tr class="row-even"><td>2</td><td>UK</td></tr>
+<tr class="row-odd"><td rowspan="2">rec_lang</td><td rowspan="2">integer</td><td rowspan="2">Language</td><td>1</td><td>German</td></tr>
+<tr class="row-odd"><td>2</td><td>English</td></tr>
+<tr class="row-even"><td rowspan="1">age</td><td rowspan="1">integer</td><td rowspan="1">Wie alt sind Sie? (Angabe in Jahren)</td><td>[18 - 75]</td><td>-</td></tr>
+<tr class="row-odd"><td rowspan="4">agegroup</td><td rowspan="4">integer</td><td rowspan="4">Zuordnung zu einer Altersgruppe</td><td>1</td><td>Altersgruppe 18-29 Jahre</td></tr>
+<tr class="row-odd"><td>2</td><td>Altersgruppe 30-44 Jahre</td></tr>
+<tr class="row-odd"><td>3</td><td>Altersgruppe 45-59 Jahre</td></tr>
+<tr class="row-odd"><td>4</td><td>Altersgruppe 60-74 Jahre</td></tr>
+<tr class="row-even"><td rowspan="2">sex</td><td rowspan="2">integer</td><td rowspan="2">Welches Geschlecht wurde bei Ihrer Geburt in Ihre Geburtsurkunde eingetragen?</td><td>0</td><td>Männlich</td></tr>
+<tr class="row-even"><td>1</td><td>Weiblich</td></tr>
+<tr class="row-odd"><td rowspan="3">sex2</td><td rowspan="3">integer</td><td rowspan="3">Welchem Geschlecht fühlen Sie sich zugehörig?</td><td>0</td><td>Männlich</td></tr>
+<tr class="row-odd"><td>1</td><td>Weiblich</td></tr>
+<tr class="row-odd"><td>2</td><td>Divers</td></tr>
+<tr class="row-even"><td rowspan="5">fam</td><td rowspan="5">integer</td><td rowspan="5">Welchen Familienstand haben Sie?</td><td>1</td><td>verheiratet oder in fester Partnerschaft</td></tr>
+<tr class="row-even"><td>2</td><td>verheiratet aber getrennt lebend</td></tr>
+<tr class="row-even"><td>3</td><td>geschieden oder Aufhebung der eingetragenen Partnerschaft</td></tr>
+<tr class="row-even"><td>4</td><td>verwitwet oder Lebenspartner:in verstorben</td></tr>
+<tr class="row-even"><td>5</td><td>ledig</td></tr>
+<tr class="row-odd"><td rowspan="9">school</td><td rowspan="9">integer</td><td rowspan="9">Welchen höchsten allgemeinbildenden Schulabschluss haben Sie? Ordnen Sie bitte im Ausland erworbene Abschlüsse einem gleichwertigen deutschen Abschluss zu.</td><td>0</td><td>proguse uk</td></tr>
+<tr class="row-odd"><td>1</td><td>Noch keinen Schulabschluss, ich bin Schüler/in</td></tr>
+<tr class="row-odd"><td>2</td><td>Schule beendet ohne Schulabschluss</td></tr>
+<tr class="row-odd"><td>3</td><td>Haupt- oder Volksschulabschluss</td></tr>
+<tr class="row-odd"><td>4</td><td>Realschulabschluss, Mittlere Reife oder gleichwertiger Abschluss</td></tr>
+<tr class="row-odd"><td>5</td><td>Polytechnische Oberschule oder DDR: mit Abschluss nach der 8. oder 9. Klasse</td></tr>
+<tr class="row-odd"><td>6</td><td>Polytechnische Oberschule oder DDR: mit Abschluss nach der 10. Klasse</td></tr>
+<tr class="row-odd"><td>7</td><td>Fachhochschulreife</td></tr>
+<tr class="row-odd"><td>8</td><td>Abitur (allgemeine oder fachgebundene Hochschulreife)</td></tr>
+<tr class="row-even"><td rowspan="3">profess1</td><td rowspan="3">integer</td><td rowspan="3">Haben Sie einen beruflichen Ausbildungsabschluss oder einen Hochschul-/Fachhochschulabschluss? Als berufliche Ausbildung gilt auch eine Anlernausbildung oder ein Praktikum von mindestens 12 Monaten.</td><td>1</td><td>Ja</td></tr>
+<tr class="row-even"><td>0</td><td>Nein</td></tr>
+<tr class="row-even"><td>-99</td><td>Systematisch fehlende Werte (z.B. bei Mehrfachantworten)</td></tr>
+<tr class="row-odd"><td rowspan="17">profess2</td><td rowspan="17">integer</td><td rowspan="17">Welchen höchsten beruflichen Ausbildungs- oder Hochschul-/Fachhochschulabschluss haben Sie? Ordnen Sie bitte im Ausland erworbene Abschlüsse einem gleichwertigen deutschen Abschluss zu.</td><td>1</td><td>Anlernausbildung, berufliches Praktikum</td></tr>
+<tr class="row-odd"><td>2</td><td>Berufsvorbereitungsjahr</td></tr>
+<tr class="row-odd"><td>3</td><td>Lehre, Berufsausbildung im dualen System</td></tr>
+<tr class="row-odd"><td>4</td><td>Berufsqualifizierender Abschluss an einer Berufsfachschule, Kollegschule</td></tr>
+<tr class="row-odd"><td>5</td><td>Vorbereitungsdienst für den mittleren Dienst in der öffentlichen Verwaltung)Ausbildungsstätten/Schulen für Gesundheits- und Sozialberufe:</td></tr>
+<tr class="row-odd"><td>6</td><td>Einjährig (z.B. Krankenpflegehelfer/in, Altenpfleger/in, Rettungsassistent/in)</td></tr>
+<tr class="row-odd"><td>7</td><td>Zweijährig (z.B. Masseur/in, Medizinischer/Medizinische Bademeister/in, PTA, Podologe/Podologin)</td></tr>
+<tr class="row-odd"><td>8</td><td>Dreijährig (z.B. Physiotherapie, Gesundheits- und Krankenpflege, MTA, Altenpflege)</td></tr>
+<tr class="row-odd"><td>9</td><td>Ausbildungsstätten/Schulen für Erzieher/innen</td></tr>
+<tr class="row-odd"><td>10</td><td>Meister/in, Techniker/in oder gleichwertiger Fachschulabschluss</td></tr>
+<tr class="row-odd"><td>11</td><td>Fachschule der DDR</td></tr>
+<tr class="row-odd"><td>12</td><td>Fachakademie (nur in Bayern)</td></tr>
+<tr class="row-odd"><td>13</td><td>Berufsakademie</td></tr>
+<tr class="row-odd"><td>14</td><td>Verwaltungsfachhochschule</td></tr>
+<tr class="row-odd"><td>15</td><td>Fachhochschule (auch Ingenieurschule, Hochschule (FH) für angewandte Wissenschaften). Duale Hochschule Baden-Württemberg</td></tr>
+<tr class="row-odd"><td>16</td><td>Universität (wissenschaftliche Hochschule, auch: Kunsthochschule, Pädagogische Hochschule, Theologische Hochschule)</td></tr>
+<tr class="row-odd"><td>-99</td><td>Systematisch fehlende Werte (z.B. bei Mehrfachantworten)</td></tr>
+<tr class="row-even"><td rowspan="5">profess3</td><td rowspan="5">integer</td><td rowspan="5">Wie ist die Bezeichnung Ihres höchsten Abschlusses?</td><td>1</td><td>Bachelor</td></tr>
+<tr class="row-even"><td>2</td><td>Master</td></tr>
+<tr class="row-even"><td>3</td><td>Diplom, Lehramtsprüfung, Staatsprüfung, Staatsexamen, Magister, künstlerischer Abschluss und vergleichbare Abschlüsse</td></tr>
+<tr class="row-even"><td>4</td><td>Promotion</td></tr>
+<tr class="row-even"><td>-99</td><td>Systematisch fehlende Werte (z.B. bei Mehrfachantworten)</td></tr>
+<tr class="row-odd"><td rowspan="9">Employ</td><td rowspan="9">integer</td><td rowspan="9">Welche Lebenssituation trifft derzeit überwiegend auf Sie zu?</td><td>1</td><td>Ich bin erwerbstätig in Vollzeit, gemeint ist auch Berufsausbildung oder Selbständigkeit</td></tr>
+<tr class="row-odd"><td>2</td><td>Ich bin erwerbstätig in Teilzeit, gemeint ist auch Berufsausbildung oder Selbständigkeit.</td></tr>
+<tr class="row-odd"><td>3</td><td>Ich bin derzeit in Kurzarbeit.</td></tr>
+<tr class="row-odd"><td>4</td><td>Ich bin geringfügig erwerbstätig, z.B. 450-Euro-Job, Minijob.</td></tr>
+<tr class="row-odd"><td>5</td><td>Ich bin arbeitslos oder arbeitssuchend bei der Agentur für Arbeit gemeldet, gemeint ist auch "Ein-Euro-Job".</td></tr>
+<tr class="row-odd"><td>6</td><td>Ich bin im Ruhestand oder Vorruhestand.</td></tr>
+<tr class="row-odd"><td>7</td><td>Ich bin Schüler/in, Student/in, Praktikant/in, Teilnehmer/in an Fortbildungsmaßnahmen, übe Freiwilligendienst aus.</td></tr>
+<tr class="row-odd"><td>8</td><td>Ich bin als Hausfrau/Hausmann tätig, betreue Kinder oder hilfsbedürftige Personen.</td></tr>
+<tr class="row-odd"><td>9</td><td>Ich bin aus anderen Gründen nicht erwerbstätig.</td></tr>
+<tr class="row-even"><td rowspan="2">migra1</td><td rowspan="2">integer</td><td rowspan="2">In welchem Land sind Sie geboren?</td><td>1</td><td>In Deutschland</td></tr>
+<tr class="row-even"><td>2</td><td>In einem anderen Land</td></tr>
+<tr class="row-odd"><td rowspan="3">migra2</td><td rowspan="3">integer</td><td rowspan="3">In welchem Land sind Ihre Eltern geboren?</td><td>1</td><td>Beide Elternteile in Deutschland</td></tr>
+<tr class="row-odd"><td>2</td><td>Ein Elternteil in Deutschland, ein Elternteil in einem anderen Land</td></tr>
+<tr class="row-odd"><td>3</td><td>Beide Elternteile in einem anderen Land</td></tr>
+<tr class="row-even"><td rowspan="5">q1asku1</td><td rowspan="5">integer</td><td rowspan="5">Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: <br><br>&emsp;In schwierigen Situationen kann ich mich auf meine Fähigkeiten verlassen.</td><td>1</td><td>trifft gar nicht zu</td></tr>
+<tr class="row-even"><td>2</td><td>trifft wenig zu</td></tr>
+<tr class="row-even"><td>3</td><td>trifft etwas zu</td></tr>
+<tr class="row-even"><td>4</td><td>trifft ziemlich zu</td></tr>
+<tr class="row-even"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-odd"><td rowspan="5">q1asku2</td><td rowspan="5">integer</td><td rowspan="5">Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: <br><br>&emsp;Die meisten Probleme kann ich aus eigener Kraft gut meistern.</td><td>1</td><td>trifft gar nicht zu</td></tr>
+<tr class="row-odd"><td>2</td><td>trifft wenig zu</td></tr>
+<tr class="row-odd"><td>3</td><td>trifft etwas zu</td></tr>
+<tr class="row-odd"><td>4</td><td>trifft ziemlich zu</td></tr>
+<tr class="row-odd"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-even"><td rowspan="5">q1asku3</td><td rowspan="5">integer</td><td rowspan="5">Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: <br><br>&emsp;Auch anstrengende und komplizierte Aufgaben kann ich in der Regel gut lösen.</td><td>1</td><td>trifft gar nicht zu</td></tr>
+<tr class="row-even"><td>2</td><td>trifft wenig zu</td></tr>
+<tr class="row-even"><td>3</td><td>trifft etwas zu</td></tr>
+<tr class="row-even"><td>4</td><td>trifft ziemlich zu</td></tr>
+<tr class="row-even"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-odd"><td rowspan="5">q1ie1</td><td rowspan="5">integer</td><td rowspan="5">Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: <br><br>&emsp;Ich habe mein Leben selbst in der Hand.</td><td>1</td><td>trifft gar nicht zu</td></tr>
+<tr class="row-odd"><td>2</td><td>trifft wenig zu</td></tr>
+<tr class="row-odd"><td>3</td><td>trifft etwas zu</td></tr>
+<tr class="row-odd"><td>4</td><td>trifft ziemlich zu</td></tr>
+<tr class="row-odd"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-even"><td rowspan="5">q1ie2</td><td rowspan="5">integer</td><td rowspan="5">Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: <br><br>&emsp;Wenn ich mich anstrenge, werde ich auch Erfolg haben.</td><td>1</td><td>trifft gar nicht zu</td></tr>
+<tr class="row-even"><td>2</td><td>trifft wenig zu</td></tr>
+<tr class="row-even"><td>3</td><td>trifft etwas zu</td></tr>
+<tr class="row-even"><td>4</td><td>trifft ziemlich zu</td></tr>
+<tr class="row-even"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-odd"><td rowspan="5">q1ie3</td><td rowspan="5">integer</td><td rowspan="5">Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: <br><br>&emsp;Egal ob privat oder im Beruf: Mein Leben wird zum großen Teil von anderen bestimmt.</td><td>1</td><td>trifft gar nicht zu</td></tr>
+<tr class="row-odd"><td>2</td><td>trifft wenig zu</td></tr>
+<tr class="row-odd"><td>3</td><td>trifft etwas zu</td></tr>
+<tr class="row-odd"><td>4</td><td>trifft ziemlich zu</td></tr>
+<tr class="row-odd"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-even"><td rowspan="5">q1ie4</td><td rowspan="5">integer</td><td rowspan="5">Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: <br><br>&emsp;Meine Pläne werden oft vom Schicksal durchkreuzt.</td><td>1</td><td>trifft gar nicht zu</td></tr>
+<tr class="row-even"><td>2</td><td>trifft wenig zu</td></tr>
+<tr class="row-even"><td>3</td><td>trifft etwas zu</td></tr>
+<tr class="row-even"><td>4</td><td>trifft ziemlich zu</td></tr>
+<tr class="row-even"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-odd"><td rowspan="2">swl</td><td rowspan="2">integer</td><td rowspan="2">Wie zufrieden sind Sie gegenwärtig, alles in allem, mit Ihrem Leben?</td><td>0</td><td>Überhaupt nicht zufrieden</td></tr>
+<tr class="row-odd"><td>10</td><td>Voll und ganz zufrieden</td></tr>
+<tr class="row-even"><td rowspan="2">hap</td><td rowspan="2">integer</td><td rowspan="2">Alles in allem betrachtet, was würden Sie sagen, wie glücklich sind Sie gegenwärtig?</td><td>0</td><td>Überhaupt nicht zufrieden</td></tr>
+<tr class="row-even"><td>10</td><td>Voll und ganz zufrieden</td></tr>
+<tr class="row-odd"><td rowspan="2">mean</td><td rowspan="2">integer</td><td rowspan="2">In wie weit empfinden Sie die Dinge, die Sie in ihrem Leben tun, insgesamt für sinnvoll?</td><td>0</td><td>Überhaupt nicht zufrieden</td></tr>
+<tr class="row-odd"><td>10</td><td>Voll und ganz zufrieden</td></tr>
+<tr class="row-even"><td rowspan="4">osss1</td><td rowspan="4">integer</td><td rowspan="4">Wie viele Menschen stehen Ihnen so nahe, dass Sie sich auf sie verlassen können, wenn Sie ernste persönliche Probleme haben?</td><td>1</td><td>keine</td></tr>
+<tr class="row-even"><td>2</td><td>1 bis 2</td></tr>
+<tr class="row-even"><td>3</td><td>3 bis 5</td></tr>
+<tr class="row-even"><td>4</td><td>6 oder mehr</td></tr>
+<tr class="row-odd"><td rowspan="5">osss2</td><td rowspan="5">integer</td><td rowspan="5">Wie viel Anteilnahme und Interesse zeigen andere Menschen an dem, was Sie tun?</td><td>1</td><td>keine</td></tr>
+<tr class="row-odd"><td>2</td><td>wenig</td></tr>
+<tr class="row-odd"><td>3</td><td>weder viel noch wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>viel</td></tr>
+<tr class="row-odd"><td>5</td><td>sehr viel</td></tr>
+<tr class="row-even"><td rowspan="5">osss3</td><td rowspan="5">integer</td><td rowspan="5">Wie einfach ist es für Sie, praktische Hilfe von Nachbarn zu erhalten, wenn Sie diese benötigen?</td><td>1</td><td>sehr schwierig</td></tr>
+<tr class="row-even"><td>2</td><td>schwierig</td></tr>
+<tr class="row-even"><td>3</td><td>möglich</td></tr>
+<tr class="row-even"><td>4</td><td>einfach</td></tr>
+<tr class="row-even"><td>5</td><td>sehr einfach</td></tr>
+<tr class="row-odd"><td rowspan="5">q2bfi1</td><td rowspan="5">integer</td><td rowspan="5">Inwieweit treffen die folgenden Aussagen auf Sie zu: <br><br>&emsp;Ich bin eher zurückhaltend, reserviert.</td><td>1</td><td>trifft überhaupt nicht zu</td></tr>
+<tr class="row-odd"><td>2</td><td>trifft eher nicht zu</td></tr>
+<tr class="row-odd"><td>3</td><td>weder noch</td></tr>
+<tr class="row-odd"><td>4</td><td>eher zutreffend</td></tr>
+<tr class="row-odd"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-even"><td rowspan="5">q2bfi2</td><td rowspan="5">integer</td><td rowspan="5">Inwieweit treffen die folgenden Aussagen auf Sie zu: <br><br>&emsp;Ich schenke anderen leicht Vertrauen, glaube an das Gute im Menschen.</td><td>1</td><td>trifft überhaupt nicht zu</td></tr>
+<tr class="row-even"><td>2</td><td>trifft eher nicht zu</td></tr>
+<tr class="row-even"><td>3</td><td>weder noch</td></tr>
+<tr class="row-even"><td>4</td><td>eher zutreffend</td></tr>
+<tr class="row-even"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-odd"><td rowspan="5">q2bfi3</td><td rowspan="5">integer</td><td rowspan="5">Inwieweit treffen die folgenden Aussagen auf Sie zu: <br><br>&emsp;Ich bin bequem, neige zur Faulheit.</td><td>1</td><td>trifft überhaupt nicht zu</td></tr>
+<tr class="row-odd"><td>2</td><td>trifft eher nicht zu</td></tr>
+<tr class="row-odd"><td>3</td><td>weder noch</td></tr>
+<tr class="row-odd"><td>4</td><td>eher zutreffend</td></tr>
+<tr class="row-odd"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-even"><td rowspan="5">q2bfi4</td><td rowspan="5">integer</td><td rowspan="5">Inwieweit treffen die folgenden Aussagen auf Sie zu: <br><br>&emsp;Ich bin entspannt, lasse mich durch Stress nicht aus der Ruhe bringen.</td><td>1</td><td>trifft überhaupt nicht zu</td></tr>
+<tr class="row-even"><td>2</td><td>trifft eher nicht zu</td></tr>
+<tr class="row-even"><td>3</td><td>weder noch</td></tr>
+<tr class="row-even"><td>4</td><td>eher zutreffend</td></tr>
+<tr class="row-even"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-odd"><td rowspan="5">q2bfi5</td><td rowspan="5">integer</td><td rowspan="5">Inwieweit treffen die folgenden Aussagen auf Sie zu: <br><br>&emsp;Ich habe nur wenig künstlerisches Interesse.</td><td>1</td><td>trifft überhaupt nicht zu</td></tr>
+<tr class="row-odd"><td>2</td><td>trifft eher nicht zu</td></tr>
+<tr class="row-odd"><td>3</td><td>weder noch</td></tr>
+<tr class="row-odd"><td>4</td><td>eher zutreffend</td></tr>
+<tr class="row-odd"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-even"><td rowspan="5">q2bfi6</td><td rowspan="5">integer</td><td rowspan="5">Inwieweit treffen die folgenden Aussagen auf Sie zu: <br><br>&emsp;Ich gehe aus mir heraus, bin gesellig.</td><td>1</td><td>trifft überhaupt nicht zu</td></tr>
+<tr class="row-even"><td>2</td><td>trifft eher nicht zu</td></tr>
+<tr class="row-even"><td>3</td><td>weder noch</td></tr>
+<tr class="row-even"><td>4</td><td>eher zutreffend</td></tr>
+<tr class="row-even"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-odd"><td rowspan="5">q2bfi7</td><td rowspan="5">integer</td><td rowspan="5">Inwieweit treffen die folgenden Aussagen auf Sie zu: <br><br>&emsp;Ich neige dazu, andere zu kritisieren.</td><td>1</td><td>trifft überhaupt nicht zu</td></tr>
+<tr class="row-odd"><td>2</td><td>trifft eher nicht zu</td></tr>
+<tr class="row-odd"><td>3</td><td>weder noch</td></tr>
+<tr class="row-odd"><td>4</td><td>eher zutreffend</td></tr>
+<tr class="row-odd"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-even"><td rowspan="5">q2bfi8</td><td rowspan="5">integer</td><td rowspan="5">Inwieweit treffen die folgenden Aussagen auf Sie zu: <br><br>&emsp;Ich erledige Aufgaben gründlich.</td><td>1</td><td>trifft überhaupt nicht zu</td></tr>
+<tr class="row-even"><td>2</td><td>trifft eher nicht zu</td></tr>
+<tr class="row-even"><td>3</td><td>weder noch</td></tr>
+<tr class="row-even"><td>4</td><td>eher zutreffend</td></tr>
+<tr class="row-even"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-odd"><td rowspan="5">q2bfi9</td><td rowspan="5">integer</td><td rowspan="5">Inwieweit treffen die folgenden Aussagen auf Sie zu: <br><br>&emsp;Ich werde leicht nervös und unsicher.</td><td>1</td><td>trifft überhaupt nicht zu</td></tr>
+<tr class="row-odd"><td>2</td><td>trifft eher nicht zu</td></tr>
+<tr class="row-odd"><td>3</td><td>weder noch</td></tr>
+<tr class="row-odd"><td>4</td><td>eher zutreffend</td></tr>
+<tr class="row-odd"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-even"><td rowspan="5">q2bfi10</td><td rowspan="5">integer</td><td rowspan="5">Inwieweit treffen die folgenden Aussagen auf Sie zu: <br><br>&emsp;Ich habe eine aktive Vorstellungskraft, bin fantasievoll.</td><td>1</td><td>trifft überhaupt nicht zu</td></tr>
+<tr class="row-even"><td>2</td><td>trifft eher nicht zu</td></tr>
+<tr class="row-even"><td>3</td><td>weder noch</td></tr>
+<tr class="row-even"><td>4</td><td>eher zutreffend</td></tr>
+<tr class="row-even"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-odd"><td rowspan="2">boredi1</td><td rowspan="2">integer</td><td rowspan="2">Es fällt mir schwer, mich selbst zu unterhalten.</td><td>1</td><td>Stimme überhaupt nicht zu</td></tr>
+<tr class="row-odd"><td>7</td><td>Stimme voll und ganz zu</td></tr>
+<tr class="row-even"><td rowspan="2">borede1</td><td rowspan="2">integer</td><td rowspan="2">Im Vergleich zu den meisten Menschen brauche ich mehr Anregung, um in Schwung zu kommen.</td><td>1</td><td>Stimme überhaupt nicht zu</td></tr>
+<tr class="row-even"><td>7</td><td>Stimme voll und ganz zu</td></tr>
+<tr class="row-odd"><td rowspan="2">boredi2</td><td rowspan="2">integer</td><td rowspan="2">In den meisten Situationen fällt es mir schwer, etwas zu finden oder zu tun, was mein Interesse weckt.</td><td>1</td><td>Stimme überhaupt nicht zu</td></tr>
+<tr class="row-odd"><td>7</td><td>Stimme voll und ganz zu</td></tr>
+<tr class="row-even"><td rowspan="2">borede2</td><td rowspan="2">integer</td><td rowspan="2">Wenn ich nicht gerade etwas Aufregendes oder gar Gefährliches tue, fühle ich mich halbtot und stumpf.</td><td>1</td><td>Stimme überhaupt nicht zu</td></tr>
+<tr class="row-even"><td>7</td><td>Stimme voll und ganz zu</td></tr>
+<tr class="row-odd"><td rowspan="2">sop1</td><td rowspan="2">integer</td><td rowspan="2">Bitte schätzen Sie sich selbst ein: <br><br>&emsp;Wie optimistisch sind Sie im Allgemeinen?</td><td>1</td><td>Gar nicht optimistisch</td></tr>
+<tr class="row-odd"><td>7</td><td>Sehr optimistisch</td></tr>
+<tr class="row-even"><td rowspan="2">sop2</td><td rowspan="2">integer</td><td rowspan="2">Bitte schätzen Sie sich selbst ein: <br><br>&emsp;Wie pessimistisch sind Sie im Allgemeinen?</td><td>1</td><td>Gar nicht optimistisch</td></tr>
+<tr class="row-even"><td>7</td><td>Sehr optimistisch</td></tr>
+<tr class="row-odd"><td rowspan="4">q3scs1</td><td rowspan="4">integer</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich beschrieb einem Freund meine Gefühle.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">q3scs2</td><td rowspan="4">integer</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich sprach mit Menschen über die Situation, weil es mir besser ging, darüber zu sprechen.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">q3scs3</td><td rowspan="4">integer</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich habe daran gearbeitet, die Probleme dieser Situation zu lösen.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">q3scs4</td><td rowspan="4">integer</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich blieb standhaft und kämpfte für das, was ich in der Situation wollte.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">q3scs5</td><td rowspan="4">integer</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich ließ mir von meinen Freunden helfen.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">q3scs6</td><td rowspan="4">integer</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich wandte mich an einen Freund oder eine Freundin und bat ihn oder sie um Rat, wie ich die Situation ändern könnte.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">q3scs7</td><td rowspan="4">integer</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich bewältigte Stress, indem ich klare Ziele setzte.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">q3scs8</td><td rowspan="4">integer</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Auch wenn sich die Stresssituation verschlechtert hatte, konnte ich damit umgehen, indem ich eine andere Strategie verfolgte.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">q3scs9</td><td rowspan="4">integer</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich wog meine Optionen sorgfältig ab.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">q3scs10</td><td rowspan="4">integer</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten. <br>Ich habe aktiv gehandelt, um die Situation zu verbessern.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">q3scs11</td><td rowspan="4">integer</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich weigerte mich, das, was passiert war, wahrzunehmen.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">q3scs12</td><td rowspan="4">integer</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich versuchte durch Essen, Trinken, Rauchen oder Medikamente, es mir besser gehen zu lassen.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">q3scs13</td><td rowspan="4">integer</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich hatte Tagträume von besseren Zeiten.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">q3scs14</td><td rowspan="4">integer</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich fantasierte darüber, wie die Dinge anders hätten laufen können.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">q3scs15</td><td rowspan="4">integer</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich suchte mir gern Herausforderungen und ging dafür auch Wagnisse ein.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">q3scs16</td><td rowspan="4">integer</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich malte mir meine Wunschträume genau aus, um sie zu verwirklichen.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="3">sit1</td><td rowspan="3">integer</td><td rowspan="3">Haben Sie bei der Beantwortung der vergangenen Aussagen zum Umgang mit Herausforderungen im Leben an eine bestimmte Situation gedacht?</td><td>0</td><td>Nein</td></tr>
+<tr class="row-odd"><td>1</td><td>Ja, ich habe an eine Situation gedacht</td></tr>
+<tr class="row-odd"><td>2</td><td>Ja, ich habe an mehrere Situationen gedacht</td></tr>
+<tr class="row-even"><td rowspan="9">sit2</td><td rowspan="9">integer</td><td rowspan="9">Bitte wählen Sie aus den nachstehenden Kategorien diejenige aus, die am ehesten zu Ihrer erinnerten Situation passt:</td><td>1</td><td>Gesundheit (z.B. Krankheit, Schmerz, Unfall, Diagnose)</td></tr>
+<tr class="row-even"><td>2</td><td>Familie und soziale Beziehungen (z.B. Verlust, Trennung, Erziehung, Geburt)</td></tr>
+<tr class="row-even"><td>3</td><td>Arbeit (z.B. Jobverlust oder Wechsel, Konflikt, Mobbing)</td></tr>
+<tr class="row-even"><td>4</td><td>Finanzielle Belastungen (z.B. Kreditzahlungen, gestiegene Lebenshaltungskosten)</td></tr>
+<tr class="row-even"><td>5</td><td>Gewalt (z.B. emotional, körperlich)</td></tr>
+<tr class="row-even"><td>6</td><td>Diskriminierung (z.B. aufgrund des Aussehens, ethnischer Zugehörigkeit)</td></tr>
+<tr class="row-even"><td>7</td><td>Krieg oder Terrorismus (z.B. Verfolgung, Flucht)</td></tr>
+<tr class="row-even"><td>8</td><td>Andere, nicht genannte</td></tr>
+<tr class="row-even"><td>-99</td><td>Systematisch fehlende Werte (z.B. bei Mehrfachantworten)</td></tr>
+<tr class="row-odd"><td rowspan="3">sit3r1</td><td rowspan="3">integer</td><td rowspan="3">Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: <br><br>&emsp;Gesundheit (z.B. Krankheit, Schmerz, Unfall, Diagnose)</td><td>0</td><td>Unchecked</td></tr>
+<tr class="row-odd"><td>1</td><td>Checked</td></tr>
+<tr class="row-odd"><td>-99</td><td>Systematisch fehlende Werte (z.B. bei Mehrfachantworten)</td></tr>
+<tr class="row-even"><td rowspan="3">sit3r2</td><td rowspan="3">integer</td><td rowspan="3">Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: <br><br>&emsp;Familie und soziale Beziehungen (z.B. Verlust, Trennung, Erziehung, Geburt)</td><td>0</td><td>Unchecked</td></tr>
+<tr class="row-even"><td>1</td><td>Checked</td></tr>
+<tr class="row-even"><td>-99</td><td>Systematisch fehlende Werte (z.B. bei Mehrfachantworten)</td></tr>
+<tr class="row-odd"><td rowspan="3">sit3r3</td><td rowspan="3">integer</td><td rowspan="3">Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: <br><br>&emsp;Arbeit (z.B. Jobverlust oder Wechsel, Konflikt, Mobbing)</td><td>0</td><td>Unchecked</td></tr>
+<tr class="row-odd"><td>1</td><td>Checked</td></tr>
+<tr class="row-odd"><td>-99</td><td>Systematisch fehlende Werte (z.B. bei Mehrfachantworten)</td></tr>
+<tr class="row-even"><td rowspan="3">sit3r4</td><td rowspan="3">integer</td><td rowspan="3">Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: <br><br>&emsp;Finanzielle Belastungen (z.B. Kreditzahlungen, gestiegene Lebenshaltungskosten)</td><td>0</td><td>Unchecked</td></tr>
+<tr class="row-even"><td>1</td><td>Checked</td></tr>
+<tr class="row-even"><td>-99</td><td>Systematisch fehlende Werte (z.B. bei Mehrfachantworten)</td></tr>
+<tr class="row-odd"><td rowspan="3">sit3r5</td><td rowspan="3">integer</td><td rowspan="3">Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: <br><br>&emsp;Gewalt (z.B. emotional, körperlich)</td><td>0</td><td>Unchecked</td></tr>
+<tr class="row-odd"><td>1</td><td>Checked</td></tr>
+<tr class="row-odd"><td>-99</td><td>Systematisch fehlende Werte (z.B. bei Mehrfachantworten)</td></tr>
+<tr class="row-even"><td rowspan="3">sit3r6</td><td rowspan="3">integer</td><td rowspan="3">Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: <br><br>&emsp;Diskriminierung (z.B. aufgrund des Aussehens, ethnischer Zugehörigkeit)</td><td>0</td><td>Unchecked</td></tr>
+<tr class="row-even"><td>1</td><td>Checked</td></tr>
+<tr class="row-even"><td>-99</td><td>Systematisch fehlende Werte (z.B. bei Mehrfachantworten)</td></tr>
+<tr class="row-odd"><td rowspan="3">sit3r7</td><td rowspan="3">integer</td><td rowspan="3">Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: <br><br>&emsp;Krieg oder Terrorismus (z.B. Verfolgung, Flucht)</td><td>0</td><td>Unchecked</td></tr>
+<tr class="row-odd"><td>1</td><td>Checked</td></tr>
+<tr class="row-odd"><td>-99</td><td>Systematisch fehlende Werte (z.B. bei Mehrfachantworten)</td></tr>
+<tr class="row-even"><td rowspan="3">sit3r8</td><td rowspan="3">integer</td><td rowspan="3">Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: <br><br>&emsp;Andere, nicht genannte</td><td>0</td><td>Unchecked</td></tr>
+<tr class="row-even"><td>1</td><td>Checked</td></tr>
+<tr class="row-even"><td>-99</td><td>Systematisch fehlende Werte (z.B. bei Mehrfachantworten)</td></tr>
+<tr class="row-odd"><td rowspan="5">q4wemwbs1</td><td rowspan="5">integer</td><td rowspan="5">Abschließend möchten wir Ihnen noch einige Fragen zu Ihrer Person und Ihrem Wohlbefinden stellen. Nachfolgend stehen einige Aussagen zu Gefühlen und Gedanken. Bitte kreuzen Sie die Antwort an, die Ihre Erfahrungen in den letzten 2 Wochen am besten beschreibt: <br><br>&emsp;Ich habe mich in Bezug auf die Zukunft optimistisch gefühlt.</td><td>1</td><td>niemals</td></tr>
+<tr class="row-odd"><td>2</td><td>selten</td></tr>
+<tr class="row-odd"><td>3</td><td>manchmal</td></tr>
+<tr class="row-odd"><td>4</td><td>häufig</td></tr>
+<tr class="row-odd"><td>5</td><td>immer</td></tr>
+<tr class="row-even"><td rowspan="5">q4wemwbs2</td><td rowspan="5">integer</td><td rowspan="5">Abschließend möchten wir Ihnen noch einige Fragen zu Ihrer Person und Ihrem Wohlbefinden stellen. Nachfolgend stehen einige Aussagen zu Gefühlen und Gedanken. Bitte kreuzen Sie die Antwort an, die Ihre Erfahrungen in den letzten 2 Wochen am besten beschreibt: <br><br>&emsp;Ich habe mich nützlich gefühlt.</td><td>1</td><td>niemals</td></tr>
+<tr class="row-even"><td>2</td><td>selten</td></tr>
+<tr class="row-even"><td>3</td><td>manchmal</td></tr>
+<tr class="row-even"><td>4</td><td>häufig</td></tr>
+<tr class="row-even"><td>5</td><td>immer</td></tr>
+<tr class="row-odd"><td rowspan="5">q4wemwbs3</td><td rowspan="5">integer</td><td rowspan="5">Abschließend möchten wir Ihnen noch einige Fragen zu Ihrer Person und Ihrem Wohlbefinden stellen. Nachfolgend stehen einige Aussagen zu Gefühlen und Gedanken. Bitte kreuzen Sie die Antwort an, die Ihre Erfahrungen in den letzten 2 Wochen am besten beschreibt: <br><br>&emsp;Ich habe mich entspannt gefühlt.</td><td>1</td><td>niemals</td></tr>
+<tr class="row-odd"><td>2</td><td>selten</td></tr>
+<tr class="row-odd"><td>3</td><td>manchmal</td></tr>
+<tr class="row-odd"><td>4</td><td>häufig</td></tr>
+<tr class="row-odd"><td>5</td><td>immer</td></tr>
+<tr class="row-even"><td rowspan="5">q4wemwbs6</td><td rowspan="5">integer</td><td rowspan="5">Abschließend möchten wir Ihnen noch einige Fragen zu Ihrer Person und Ihrem Wohlbefinden stellen. Nachfolgend stehen einige Aussagen zu Gefühlen und Gedanken. Bitte kreuzen Sie die Antwort an, die Ihre Erfahrungen in den letzten 2 Wochen am besten beschreibt: <br><br>&emsp;Ich bin mit Problemen gut umgegangen.</td><td>1</td><td>niemals</td></tr>
+<tr class="row-even"><td>2</td><td>selten</td></tr>
+<tr class="row-even"><td>3</td><td>manchmal</td></tr>
+<tr class="row-even"><td>4</td><td>häufig</td></tr>
+<tr class="row-even"><td>5</td><td>immer</td></tr>
+<tr class="row-odd"><td rowspan="5">q4wemwbs7</td><td rowspan="5">integer</td><td rowspan="5">Abschließend möchten wir Ihnen noch einige Fragen zu Ihrer Person und Ihrem Wohlbefinden stellen. Nachfolgend stehen einige Aussagen zu Gefühlen und Gedanken. Bitte kreuzen Sie die Antwort an, die Ihre Erfahrungen in den letzten 2 Wochen am besten beschreibt: <br><br>&emsp;Ich konnte klar denken.</td><td>1</td><td>niemals</td></tr>
+<tr class="row-odd"><td>2</td><td>selten</td></tr>
+<tr class="row-odd"><td>3</td><td>manchmal</td></tr>
+<tr class="row-odd"><td>4</td><td>häufig</td></tr>
+<tr class="row-odd"><td>5</td><td>immer</td></tr>
+<tr class="row-even"><td rowspan="5">q4wemwbs9</td><td rowspan="5">integer</td><td rowspan="5">Abschließend möchten wir Ihnen noch einige Fragen zu Ihrer Person und Ihrem Wohlbefinden stellen. Nachfolgend stehen einige Aussagen zu Gefühlen und Gedanken. Bitte kreuzen Sie die Antwort an, die Ihre Erfahrungen in den letzten 2 Wochen am besten beschreibt: <br><br>&emsp;Ich habe mich anderen Menschen nahe gefühlt.</td><td>1</td><td>niemals</td></tr>
+<tr class="row-even"><td>2</td><td>selten</td></tr>
+<tr class="row-even"><td>3</td><td>manchmal</td></tr>
+<tr class="row-even"><td>4</td><td>häufig</td></tr>
+<tr class="row-even"><td>5</td><td>immer</td></tr>
+<tr class="row-odd"><td rowspan="5">q4wemwbs11</td><td rowspan="5">integer</td><td rowspan="5">Abschließend möchten wir Ihnen noch einige Fragen zu Ihrer Person und Ihrem Wohlbefinden stellen. Nachfolgend stehen einige Aussagen zu Gefühlen und Gedanken. Bitte kreuzen Sie die Antwort an, die Ihre Erfahrungen in den letzten 2 Wochen am besten beschreibt: <br><br>&emsp;Ich war in der Lage, Entscheidungen zu treffen.</td><td>1</td><td>niemals</td></tr>
+<tr class="row-odd"><td>2</td><td>selten</td></tr>
+<tr class="row-odd"><td>3</td><td>manchmal</td></tr>
+<tr class="row-odd"><td>4</td><td>häufig</td></tr>
+<tr class="row-odd"><td>5</td><td>immer</td></tr>
+<tr class="row-even"><td rowspan="5">mehm1</td><td rowspan="5">integer</td><td rowspan="5">Wie ist Ihr Gesundheitszustand im Allgemeinen?</td><td>5</td><td>sehr gut</td></tr>
+<tr class="row-even"><td>4</td><td>gut</td></tr>
+<tr class="row-even"><td>3</td><td>mittelmäßig</td></tr>
+<tr class="row-even"><td>2</td><td>schlecht</td></tr>
+<tr class="row-even"><td>1</td><td>sehr schlecht</td></tr>
+<tr class="row-odd"><td rowspan="3">chronr1</td><td rowspan="3">integer</td><td rowspan="3">Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: <br><br>&emsp;Zuckerkrankheit/Diabetes, kein Schwangerschaftsdiabetes</td><td>1</td><td>ja</td></tr>
+<tr class="row-odd"><td>2</td><td>nein</td></tr>
+<tr class="row-odd"><td>3</td><td>weiß nicht</td></tr>
+<tr class="row-even"><td rowspan="3">chronr2</td><td rowspan="3">integer</td><td rowspan="3">Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: <br><br>&emsp;Herzinfarkt</td><td>1</td><td>ja</td></tr>
+<tr class="row-even"><td>2</td><td>nein</td></tr>
+<tr class="row-even"><td>3</td><td>weiß nicht</td></tr>
+<tr class="row-odd"><td rowspan="3">chronr3</td><td rowspan="3">integer</td><td rowspan="3">Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: <br><br>&emsp;Chronische Beschwerden infolge eines Herzinfarkts</td><td>1</td><td>ja</td></tr>
+<tr class="row-odd"><td>2</td><td>nein</td></tr>
+<tr class="row-odd"><td>3</td><td>weiß nicht</td></tr>
+<tr class="row-even"><td rowspan="3">chronr4</td><td rowspan="3">integer</td><td rowspan="3">Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: <br><br>&emsp;Koronare Herzerkrankung oder Angina Pectoris</td><td>1</td><td>ja</td></tr>
+<tr class="row-even"><td>2</td><td>nein</td></tr>
+<tr class="row-even"><td>3</td><td>weiß nicht</td></tr>
+<tr class="row-odd"><td rowspan="3">chronr5</td><td rowspan="3">integer</td><td rowspan="3">Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: <br><br>&emsp;Schlaganfall</td><td>1</td><td>ja</td></tr>
+<tr class="row-odd"><td>2</td><td>nein</td></tr>
+<tr class="row-odd"><td>3</td><td>weiß nicht</td></tr>
+<tr class="row-even"><td rowspan="3">chronr6</td><td rowspan="3">integer</td><td rowspan="3">Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: <br><br>&emsp;Chronische Beschwerden infolge eines Schlaganfalls</td><td>1</td><td>ja</td></tr>
+<tr class="row-even"><td>2</td><td>nein</td></tr>
+<tr class="row-even"><td>3</td><td>weiß nicht</td></tr>
+<tr class="row-odd"><td rowspan="3">chronr7</td><td rowspan="3">integer</td><td rowspan="3">Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: <br><br>&emsp;chronische Bronchitis</td><td>1</td><td>ja</td></tr>
+<tr class="row-odd"><td>2</td><td>nein</td></tr>
+<tr class="row-odd"><td>3</td><td>weiß nicht</td></tr>
+<tr class="row-even"><td rowspan="3">chronr8</td><td rowspan="3">integer</td><td rowspan="3">Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: <br><br>&emsp;chronisch obstruktive Lungenerkrankung, Lungenemphysem</td><td>1</td><td>ja</td></tr>
+<tr class="row-even"><td>2</td><td>nein</td></tr>
+<tr class="row-even"><td>3</td><td>weiß nicht</td></tr>
+<tr class="row-odd"><td rowspan="3">chronr9</td><td rowspan="3">integer</td><td rowspan="3">Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: <br><br>&emsp;Hautkrebs</td><td>1</td><td>ja</td></tr>
+<tr class="row-odd"><td>2</td><td>nein</td></tr>
+<tr class="row-odd"><td>3</td><td>weiß nicht</td></tr>
+<tr class="row-even"><td rowspan="3">chronr10</td><td rowspan="3">integer</td><td rowspan="3">Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: <br><br>&emsp;Lungenkrebs</td><td>1</td><td>ja</td></tr>
+<tr class="row-even"><td>2</td><td>nein</td></tr>
+<tr class="row-even"><td>3</td><td>weiß nicht</td></tr>
+<tr class="row-odd"><td rowspan="3">chronr11</td><td rowspan="3">integer</td><td rowspan="3">Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: <br><br>&emsp;Darmkrebs</td><td>1</td><td>ja</td></tr>
+<tr class="row-odd"><td>2</td><td>nein</td></tr>
+<tr class="row-odd"><td>3</td><td>weiß nicht</td></tr>
+<tr class="row-even"><td rowspan="3">chronr12</td><td rowspan="3">integer</td><td rowspan="3">Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: <br><br>&emsp;Brustkrebs</td><td>1</td><td>ja</td></tr>
+<tr class="row-even"><td>2</td><td>nein</td></tr>
+<tr class="row-even"><td>3</td><td>weiß nicht</td></tr>
+<tr class="row-odd"><td rowspan="3">chronr13</td><td rowspan="3">integer</td><td rowspan="3">Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: <br><br>&emsp;Prostatakrebs</td><td>1</td><td>ja</td></tr>
+<tr class="row-odd"><td>2</td><td>nein</td></tr>
+<tr class="row-odd"><td>3</td><td>weiß nicht</td></tr>
+<tr class="row-even"><td rowspan="3">chronr14</td><td rowspan="3">integer</td><td rowspan="3">Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: <br><br>&emsp;Depressive Störung</td><td>1</td><td>ja</td></tr>
+<tr class="row-even"><td>2</td><td>nein</td></tr>
+<tr class="row-even"><td>3</td><td>weiß nicht</td></tr>
+<tr class="row-odd"><td rowspan="3">chronr15</td><td rowspan="3">integer</td><td rowspan="3">Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: <br><br>&emsp;Angststörung</td><td>1</td><td>ja</td></tr>
+<tr class="row-odd"><td>2</td><td>nein</td></tr>
+<tr class="row-odd"><td>3</td><td>weiß nicht</td></tr>
+<tr class="row-even"><td rowspan="3">chronr16</td><td rowspan="3">integer</td><td rowspan="3">Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: <br><br>&emsp;Essstörung</td><td>1</td><td>ja</td></tr>
+<tr class="row-even"><td>2</td><td>nein</td></tr>
+<tr class="row-even"><td>3</td><td>weiß nicht</td></tr>
+<tr class="row-odd"><td rowspan="3">chronr17</td><td rowspan="3">integer</td><td rowspan="3">Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: <br><br>&emsp;Anpassungsstörung (z.B. posttraumatische Belastungsstörung, PTBS)</td><td>1</td><td>ja</td></tr>
+<tr class="row-odd"><td>2</td><td>nein</td></tr>
+<tr class="row-odd"><td>3</td><td>weiß nicht</td></tr>
+<tr class="row-even"><td rowspan="3">chronr18</td><td rowspan="3">integer</td><td rowspan="3">Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: <br><br>&emsp;Burnout-Syndrom</td><td>1</td><td>ja</td></tr>
+<tr class="row-even"><td>2</td><td>nein</td></tr>
+<tr class="row-even"><td>3</td><td>weiß nicht</td></tr>
+<tr class="row-odd"><td rowspan="3">chronr19</td><td rowspan="3">integer</td><td rowspan="3">Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: <br><br>&emsp;Aufmerksamkeitsdefizit-Hyperaktivitäts-Störung/ Aufmerksamkeitsdefizit-Störung (ADHS bzw. ADS)</td><td>1</td><td>ja</td></tr>
+<tr class="row-odd"><td>2</td><td>nein</td></tr>
+<tr class="row-odd"><td>3</td><td>weiß nicht</td></tr>
+<tr class="row-even"><td rowspan="3">chronr20</td><td rowspan="3">integer</td><td rowspan="3">Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: <br><br>&emsp;Persönlichkeitsstörung (z.B. emotional instabile oder narzisstische Persönlichkeitsstörung)</td><td>1</td><td>ja</td></tr>
+<tr class="row-even"><td>2</td><td>nein</td></tr>
+<tr class="row-even"><td>3</td><td>weiß nicht</td></tr>
+<tr class="row-odd"><td rowspan="3">chronr21</td><td rowspan="3">integer</td><td rowspan="3">Es geht nun um dauerhafte Krankheiten und chronische Gesundheitsprobleme. Bitte berücksichtigen Sie dabei keine vorübergehenden gesundheitlichen Probleme. Hatten Sie in den letzten 12 Monaten eine der folgenden Krankheiten oder Beschwerden? Es folgt nun eine Liste. Bitte antworten Sie jeweils mit ja oder nein: <br><br>&emsp;Andere, nicht genannte</td><td>1</td><td>ja</td></tr>
+<tr class="row-odd"><td>2</td><td>nein</td></tr>
+<tr class="row-odd"><td>3</td><td>weiß nicht</td></tr>
+<tr class="row-even"><td rowspan="5">q5funkt1</td><td rowspan="5">integer</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Können Sie Hausarbeiten erledigen, z. B. Staubsaugen oder Gartenarbeit?</td><td>4</td><td>ohne jede Schwierigkeit</td></tr>
+<tr class="row-even"><td>3</td><td>mit geringen Schwierigkeiten</td></tr>
+<tr class="row-even"><td>2</td><td>mit einigen Schwierigkeiten</td></tr>
+<tr class="row-even"><td>1</td><td>mit großen Schwierigkeiten</td></tr>
+<tr class="row-even"><td>0</td><td>kann ich gar nicht</td></tr>
+<tr class="row-odd"><td rowspan="5">q5funkt2</td><td rowspan="5">integer</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Können Sie mit normaler Geschwindigkeit Treppen hoch- und runtergehen?</td><td>4</td><td>ohne jede Schwierigkeit</td></tr>
+<tr class="row-odd"><td>3</td><td>mit geringen Schwierigkeiten</td></tr>
+<tr class="row-odd"><td>2</td><td>mit einigen Schwierigkeiten</td></tr>
+<tr class="row-odd"><td>1</td><td>mit großen Schwierigkeiten</td></tr>
+<tr class="row-odd"><td>0</td><td>kann ich gar nicht</td></tr>
+<tr class="row-even"><td rowspan="5">q5funkt3</td><td rowspan="5">integer</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Können Sie mindestens 15 Minuten lang spazieren gehen?</td><td>4</td><td>ohne jede Schwierigkeit</td></tr>
+<tr class="row-even"><td>3</td><td>mit geringen Schwierigkeiten</td></tr>
+<tr class="row-even"><td>2</td><td>mit einigen Schwierigkeiten</td></tr>
+<tr class="row-even"><td>1</td><td>mit großen Schwierigkeiten</td></tr>
+<tr class="row-even"><td>0</td><td>kann ich gar nicht</td></tr>
+<tr class="row-odd"><td rowspan="5">q5funkt4</td><td rowspan="5">integer</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Können Sie Besorgungen machen und einkaufen gehen?</td><td>4</td><td>ohne jede Schwierigkeit</td></tr>
+<tr class="row-odd"><td>3</td><td>mit geringen Schwierigkeiten</td></tr>
+<tr class="row-odd"><td>2</td><td>mit einigen Schwierigkeiten</td></tr>
+<tr class="row-odd"><td>1</td><td>mit großen Schwierigkeiten</td></tr>
+<tr class="row-odd"><td>0</td><td>kann ich gar nicht</td></tr>
+<tr class="row-even"><td rowspan="5">q6teilhab1</td><td rowspan="5">integer</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Es fällt mir schwer, allen meinen regelmäßigen Freizeitaktivitäten mit anderen nachzugehen.</td><td>1</td><td>nie</td></tr>
+<tr class="row-even"><td>2</td><td>selten</td></tr>
+<tr class="row-even"><td>3</td><td>manchmal</td></tr>
+<tr class="row-even"><td>4</td><td>oft</td></tr>
+<tr class="row-even"><td>5</td><td>immer</td></tr>
+<tr class="row-odd"><td rowspan="5">q6teilhab2</td><td rowspan="5">integer</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit meiner Familie machen möchte.</td><td>1</td><td>nie</td></tr>
+<tr class="row-odd"><td>2</td><td>selten</td></tr>
+<tr class="row-odd"><td>3</td><td>manchmal</td></tr>
+<tr class="row-odd"><td>4</td><td>oft</td></tr>
+<tr class="row-odd"><td>5</td><td>immer</td></tr>
+<tr class="row-even"><td rowspan="5">q6teilhab3</td><td rowspan="5">integer</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Es fällt mir schwer, meine gewohnte Arbeit zu erledigen (einschließlich der Arbeit zu Hause).</td><td>1</td><td>nie</td></tr>
+<tr class="row-even"><td>2</td><td>selten</td></tr>
+<tr class="row-even"><td>3</td><td>manchmal</td></tr>
+<tr class="row-even"><td>4</td><td>oft</td></tr>
+<tr class="row-even"><td>5</td><td>immer</td></tr>
+<tr class="row-odd"><td rowspan="5">q6teilhab4</td><td rowspan="5">integer</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit meinen Freunden machen möchte.</td><td>1</td><td>nie</td></tr>
+<tr class="row-odd"><td>2</td><td>selten</td></tr>
+<tr class="row-odd"><td>3</td><td>manchmal</td></tr>
+<tr class="row-odd"><td>4</td><td>oft</td></tr>
+<tr class="row-odd"><td>5</td><td>immer</td></tr>
+<tr class="row-even"><td rowspan="5">q7fatig1</td><td rowspan="5">integer</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Ich war erschöpft.</td><td>0</td><td>überhaupt nicht</td></tr>
+<tr class="row-even"><td>1</td><td>ein wenig</td></tr>
+<tr class="row-even"><td>2</td><td>mäßig</td></tr>
+<tr class="row-even"><td>3</td><td>ziemlich</td></tr>
+<tr class="row-even"><td>4</td><td>sehr</td></tr>
+<tr class="row-odd"><td rowspan="5">q7fatig2</td><td rowspan="5">integer</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Es fiel mir schwer etwas anzufangen, weil ich müde war.</td><td>0</td><td>überhaupt nicht</td></tr>
+<tr class="row-odd"><td>1</td><td>ein wenig</td></tr>
+<tr class="row-odd"><td>2</td><td>mäßig</td></tr>
+<tr class="row-odd"><td>3</td><td>ziemlich</td></tr>
+<tr class="row-odd"><td>4</td><td>sehr</td></tr>
+<tr class="row-even"><td rowspan="5">q7fatig3</td><td rowspan="5">integer</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Wie ausgelaugt fühlten Sie sich im Allgemeinen?</td><td>0</td><td>überhaupt nicht</td></tr>
+<tr class="row-even"><td>1</td><td>ein wenig</td></tr>
+<tr class="row-even"><td>2</td><td>mäßig</td></tr>
+<tr class="row-even"><td>3</td><td>ziemlich</td></tr>
+<tr class="row-even"><td>4</td><td>sehr</td></tr>
+<tr class="row-odd"><td rowspan="5">q7fatig4</td><td rowspan="5">integer</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Wie erschöpft waren Sie im Allgemeinen?</td><td>0</td><td>überhaupt nicht</td></tr>
+<tr class="row-odd"><td>1</td><td>ein wenig</td></tr>
+<tr class="row-odd"><td>2</td><td>mäßig</td></tr>
+<tr class="row-odd"><td>3</td><td>ziemlich</td></tr>
+<tr class="row-odd"><td>4</td><td>sehr</td></tr>
+<tr class="row-even"><td rowspan="5">q8angst1</td><td rowspan="5">integer</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Ich fürchtete mich.</td><td>0</td><td>nie</td></tr>
+<tr class="row-even"><td>1</td><td>selten</td></tr>
+<tr class="row-even"><td>2</td><td>manchmal</td></tr>
+<tr class="row-even"><td>3</td><td>oft</td></tr>
+<tr class="row-even"><td>4</td><td>immer</td></tr>
+<tr class="row-odd"><td rowspan="5">q8angst2</td><td rowspan="5">integer</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Ich fand es schwer, auf etwas anderes zu achten als auf meine Angst.</td><td>0</td><td>nie</td></tr>
+<tr class="row-odd"><td>1</td><td>selten</td></tr>
+<tr class="row-odd"><td>2</td><td>manchmal</td></tr>
+<tr class="row-odd"><td>3</td><td>oft</td></tr>
+<tr class="row-odd"><td>4</td><td>immer</td></tr>
+<tr class="row-even"><td rowspan="5">q8angst3</td><td rowspan="5">integer</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Meine Sorgen haben mich überwältigt.</td><td>0</td><td>nie</td></tr>
+<tr class="row-even"><td>1</td><td>selten</td></tr>
+<tr class="row-even"><td>2</td><td>manchmal</td></tr>
+<tr class="row-even"><td>3</td><td>oft</td></tr>
+<tr class="row-even"><td>4</td><td>immer</td></tr>
+<tr class="row-odd"><td rowspan="5">q8angst4</td><td rowspan="5">integer</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Ich fühlte mich unruhig.</td><td>0</td><td>nie</td></tr>
+<tr class="row-odd"><td>1</td><td>selten</td></tr>
+<tr class="row-odd"><td>2</td><td>manchmal</td></tr>
+<tr class="row-odd"><td>3</td><td>oft</td></tr>
+<tr class="row-odd"><td>4</td><td>immer</td></tr>
+<tr class="row-even"><td rowspan="5">q8depr1</td><td rowspan="5">integer</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Ich fühlte mich wertlos.</td><td>0</td><td>nie</td></tr>
+<tr class="row-even"><td>1</td><td>selten</td></tr>
+<tr class="row-even"><td>2</td><td>manchmal</td></tr>
+<tr class="row-even"><td>3</td><td>oft</td></tr>
+<tr class="row-even"><td>4</td><td>immer</td></tr>
+<tr class="row-odd"><td rowspan="5">q8depr2</td><td rowspan="5">integer</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Ich fühlte mich hilflos.</td><td>0</td><td>nie</td></tr>
+<tr class="row-odd"><td>1</td><td>selten</td></tr>
+<tr class="row-odd"><td>2</td><td>manchmal</td></tr>
+<tr class="row-odd"><td>3</td><td>oft</td></tr>
+<tr class="row-odd"><td>4</td><td>immer</td></tr>
+<tr class="row-even"><td rowspan="5">q8depr3</td><td rowspan="5">integer</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Ich fühlte mich niedergeschlagen.</td><td>0</td><td>nie</td></tr>
+<tr class="row-even"><td>1</td><td>selten</td></tr>
+<tr class="row-even"><td>2</td><td>manchmal</td></tr>
+<tr class="row-even"><td>3</td><td>oft</td></tr>
+<tr class="row-even"><td>4</td><td>immer</td></tr>
+<tr class="row-odd"><td rowspan="5">q8depr4</td><td rowspan="5">integer</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Ich fühlte mich hoffnungslos.</td><td>0</td><td>nie</td></tr>
+<tr class="row-odd"><td>1</td><td>selten</td></tr>
+<tr class="row-odd"><td>2</td><td>manchmal</td></tr>
+<tr class="row-odd"><td>3</td><td>oft</td></tr>
+<tr class="row-odd"><td>4</td><td>immer</td></tr>
+<tr class="row-even"><td rowspan="5">q9schlaf1</td><td rowspan="5">integer</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an.</td><td>1</td><td>sehr schlecht</td></tr>
+<tr class="row-even"><td>2</td><td>schlecht</td></tr>
+<tr class="row-even"><td>3</td><td>mäßig</td></tr>
+<tr class="row-even"><td>4</td><td>gut</td></tr>
+<tr class="row-even"><td>5</td><td>sehr gut</td></tr>
+<tr class="row-odd"><td rowspan="5">q10schlaf2</td><td rowspan="5">integer</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Mein Schlaf war erfrischend.</td><td>5</td><td>überhaupt nicht</td></tr>
+<tr class="row-odd"><td>4</td><td>ein wenig</td></tr>
+<tr class="row-odd"><td>3</td><td>mäßig</td></tr>
+<tr class="row-odd"><td>2</td><td>ziemlich</td></tr>
+<tr class="row-odd"><td>1</td><td>sehr</td></tr>
+<tr class="row-even"><td rowspan="5">q10schlaf3</td><td rowspan="5">integer</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Ich hatte Schlafprobleme.</td><td>5</td><td>überhaupt nicht</td></tr>
+<tr class="row-even"><td>4</td><td>ein wenig</td></tr>
+<tr class="row-even"><td>3</td><td>mäßig</td></tr>
+<tr class="row-even"><td>2</td><td>ziemlich</td></tr>
+<tr class="row-even"><td>1</td><td>sehr</td></tr>
+<tr class="row-odd"><td rowspan="5">q10schlaf4</td><td rowspan="5">integer</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Ich hatte Schwierigkeiten einzuschlafen.</td><td>5</td><td>überhaupt nicht</td></tr>
+<tr class="row-odd"><td>4</td><td>ein wenig</td></tr>
+<tr class="row-odd"><td>3</td><td>mäßig</td></tr>
+<tr class="row-odd"><td>2</td><td>ziemlich</td></tr>
+<tr class="row-odd"><td>1</td><td>sehr</td></tr>
+<tr class="row-even"><td rowspan="5">q11schmerz1</td><td rowspan="5">integer</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Wie sehr beeinträchtigen Schmerzen Ihre Alltagsaktivitäten?</td><td>0</td><td>überhaupt nicht</td></tr>
+<tr class="row-even"><td>1</td><td>ein wenig</td></tr>
+<tr class="row-even"><td>2</td><td>mäßig</td></tr>
+<tr class="row-even"><td>3</td><td>ziemlich</td></tr>
+<tr class="row-even"><td>4</td><td>sehr</td></tr>
+<tr class="row-odd"><td rowspan="5">q11schmerz2</td><td rowspan="5">integer</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Wie sehr beeinträchtigen Schmerzen Ihre häuslichen Tätigkeiten?</td><td>0</td><td>überhaupt nicht</td></tr>
+<tr class="row-odd"><td>1</td><td>ein wenig</td></tr>
+<tr class="row-odd"><td>2</td><td>mäßig</td></tr>
+<tr class="row-odd"><td>3</td><td>ziemlich</td></tr>
+<tr class="row-odd"><td>4</td><td>sehr</td></tr>
+<tr class="row-even"><td rowspan="5">q11schmerz3</td><td rowspan="5">integer</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Wie sehr beeinträchtigen Schmerzen Ihre Fähigkeiten, an sozialen Aktivitäten teilzunehmen?</td><td>0</td><td>überhaupt nicht</td></tr>
+<tr class="row-even"><td>1</td><td>ein wenig</td></tr>
+<tr class="row-even"><td>2</td><td>mäßig</td></tr>
+<tr class="row-even"><td>3</td><td>ziemlich</td></tr>
+<tr class="row-even"><td>4</td><td>sehr</td></tr>
+<tr class="row-odd"><td rowspan="5">q11schmerz4</td><td rowspan="5">integer</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Wie sehr beeinträchtigen Schmerzen Sie bei Ihrer Hausarbeit?</td><td>0</td><td>überhaupt nicht</td></tr>
+<tr class="row-odd"><td>1</td><td>ein wenig</td></tr>
+<tr class="row-odd"><td>2</td><td>mäßig</td></tr>
+<tr class="row-odd"><td>3</td><td>ziemlich</td></tr>
+<tr class="row-odd"><td>4</td><td>sehr</td></tr>
+<tr class="row-even"><td rowspan="2">schmerz5</td><td rowspan="2">integer</td><td rowspan="2">Schmerzintensität In den letzten 7 Tagen, wie würden Sie Ihre Schmerzen im Allgemeinen einschätzen?</td><td>0</td><td>Keine Schmerzen</td></tr>
+<tr class="row-even"><td>10</td><td>Schlimmste vorstellbare Schmerzen</td></tr>
+<tr class="row-odd"><td rowspan="2">vlist</td><td rowspan="2">integer</td><td rowspan="2">Participant source</td><td>1</td><td>Sample UK (list=2)</td></tr>
+<tr class="row-odd"><td>2</td><td>Sample DE (list=1)</td></tr>
+<tr class="row-even"><td rowspan="1">qtime</td><td rowspan="1">number</td><td rowspan="1">Interviewzeit in Sekunden</td><td>[0 - 999999]</td><td>-</td></tr>
+<tr class="row-odd"><td rowspan="2">vdecLang</td><td rowspan="2">integer</td><td rowspan="2">Sprach-Tracker</td><td>1</td><td>German</td></tr>
+<tr class="row-odd"><td>2</td><td>English (UK)</td></tr>
+<tr class="row-even"><td rowspan="1">start_date</td><td rowspan="1">string</td><td rowspan="1">Startzeitpunkt der Umfrage</td><td>-</td><td>-</td></tr>
+</table></div></body></html>
