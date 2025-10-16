@@ -1,0 +1,144 @@
+{
+  "resource": {
+    "classification": {
+      "type": "Dataset"
+    },
+    "collection": [
+      "Robert Koch Institute"
+    ],
+    "descriptions": [
+      {
+        "language": "DE (German)",
+        "text": "Die Coping-Studie II untersucht Bewältigungsstrategien im Umgang mit Herausforderungen und dient der Validierung einer Kurzskala zur Erhebung von Coping-Strategien in deutscher und englischer Sprache. Die Studie wurde im Oktober 2023 als querschnittliche Online-Befragung mit 2.000 Erwachsenen im Alter von 18 bis 74 Jahren aus Deutschland und dem Vereinigten Königreich durchgeführt. Das Studiendesign berücksichtigte soziodemografische Variablen, psychische Gesundheit, gesundheitsbezogene Lebensqualität sowie Coping-Strategien und -Situationen in verschiedenen Lebensbereichen.\n\n\nZur Datenerhebung wurden etablierte psychometrische Instrumente wie PROMIS-29, BFI-10 und weitere Validierungsmaßnahmen herangezogen. Die Datenqualität wurde durch Prüfung auf unplausible Antworten mittels statistischer Indizes sichergestellt. Der finale Datensatz wird als Open Data bereitgestellt und steht zur wissenschaftlichen Nachnutzung über das Forschungsdatenzentrum des Robert Koch-Instituts zur Verfügung. Die Ergebnisse dieser Studie sollen künftig in die psychische Gesundheitsüberwachung integriert werden und zur weitergehenden Forschung im Bereich der Coping-Mechanismen beitragen.  "
+      }
+    ],
+    "titles": [
+      {
+        "language": "DE (German)",
+        "text": "Umgang mit Herausforderungen im Leben - Coping-Studie II"
+      }
+    ],
+    "ids": [
+      {
+        "identifier": "10.5281/zenodo.12542554",
+        "typeGeneral": "Dataset",
+        "relationType": "A references B",
+        "scheme": "DOI"
+      },
+      {
+        "identifier": "https://github.com/robert-koch-institut/Umgang_mit_Herausforderungen_im_Leben_Coping-Studie_2",
+        "relationType": "A references B",
+        "typeGeneral": "Dataset",
+        "scheme": "URL"
+      }
+    ],
+    "provenance": {
+      "dataSource": "Automatically uploaded: Other"
+    },
+    "keywords": [
+      {
+        "label": "Public health",
+        "code": "D011634"
+      },
+      {
+        "label": "Mental Health",
+        "code": "D008603"
+      },
+      {
+        "label": "Psychological well-being",
+        "code": "D000092862"
+      },
+      {
+        "label": "Psychological Resilience",
+        "code": "D055500"
+      },
+      {
+        "label": "Health Promotion",
+        "code": "D006293"
+      },
+      {
+        "label": "Health Behavior",
+        "code": "D015438"
+      },
+      {
+        "label": "Psychosocial Functioning",
+        "code": "D000083623"
+      },
+      {
+        "label": "Coping",
+        "code": "D000223"
+      },
+      {
+        "label": "Stress",
+        "code": "D013315"
+      },
+      {
+        "label": "Crises"
+      },
+      {
+        "label": "Instrument development"
+      },
+      {
+        "label": "Scale development"
+      },
+      {
+        "label": "Short Scale"
+      },
+      {
+        "label": "Validity"
+      },
+      {
+        "label": "Reliability"
+      },
+      {
+        "label": "Germany"
+      },
+      {
+        "label": "United Kingdom"
+      },
+      {
+        "label": "Open Data"
+      },
+      {
+        "label": "RKI"
+      }
+    ],
+    "languages": [
+      "DE (German)"
+    ],
+    "nonStudyDetails": {
+      "useRights": {
+        "confirmations": {
+          "authority": true,
+          "irrevocability": true,
+          "terms": true,
+          "supportByLicensing": true
+        },
+        "label": "CC BY 4.0 (Creative Commons Attribution 4.0 International)"
+      },
+      "version": "2025-10-15"
+    },
+    "webpage": "https://robert-koch-institut.github.io/Umgang_mit_Herausforderungen_im_Leben_Coping-Studie_2",
+    "contributors": [
+      {
+        "affiliations": [
+          {
+            "name": "Robert Koch-Institut"
+          }
+        ],
+        "nameType": "Personal",
+        "personal": {
+          "type": "Creator/Author",
+          "givenName": "Caroline",
+          "familyName": "Cohrdes",
+          "identifiers": [
+            {
+              "identifier": "0000-0003-0063-4145",
+              "scheme": "ORCID"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

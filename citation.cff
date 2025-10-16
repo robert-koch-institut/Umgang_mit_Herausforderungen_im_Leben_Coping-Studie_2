@@ -1,0 +1,55 @@
+cff-version: 1.2.0
+type: dataset
+title: Umgang mit Herausforderungen im Leben - Coping-Studie II
+abstract: >-
+  Die Coping-Studie II untersucht Bewältigungsstrategien im Umgang mit
+  Herausforderungen und dient der Validierung einer Kurzskala zur Erhebung von
+  Coping-Strategien in deutscher und englischer Sprache. Die Studie wurde im
+  Oktober 2023 als querschnittliche Online-Befragung mit 2.000 Erwachsenen im
+  Alter von 18 bis 74 Jahren aus Deutschland und dem Vereinigten Königreich
+  durchgeführt. Das Studiendesign berücksichtigte soziodemografische Variablen,
+  psychische Gesundheit, gesundheitsbezogene Lebensqualität sowie
+  Coping-Strategien und -Situationen in verschiedenen Lebensbereichen.
+
+
+
+  Zur Datenerhebung wurden etablierte psychometrische Instrumente wie PROMIS-29,
+  BFI-10 und weitere Validierungsmaßnahmen herangezogen. Die Datenqualität wurde
+  durch Prüfung auf unplausible Antworten mittels statistischer Indizes
+  sichergestellt. Der finale Datensatz wird als Open Data bereitgestellt und
+  steht zur wissenschaftlichen Nachnutzung über das Forschungsdatenzentrum des
+  Robert Koch-Instituts zur Verfügung. Die Ergebnisse dieser Studie sollen
+  künftig in die psychische Gesundheitsüberwachung integriert werden und zur
+  weitergehenden Forschung im Bereich der Coping-Mechanismen beitragen.  
+date-released: '2025-10-16'
+keywords:
+  - Public health
+  - Mental Health
+  - Psychological well-being
+  - Psychological Resilience
+  - Health Promotion
+  - Health Behavior
+  - Psychosocial Functioning
+  - Coping
+  - Stress
+  - Crises
+  - Instrument development
+  - Scale development
+  - Short Scale
+  - Validity
+  - Reliability
+  - Germany
+  - United Kingdom
+  - Open Data
+  - RKI
+message: Cite me!
+url: >-
+  https://robert-koch-institut.github.io/Umgang_mit_Herausforderungen_im_Leben_Coping-Studie_2
+license: CC-BY-4.0
+doi: 10.5281/zenodo.12542554
+version: '2025-10-16'
+authors:
+  - family-names: Cohrdes
+    given-names: Caroline
+    affiliation: Robert Koch-Institut
+    orcid: 0000-0003-0063-4145
