@@ -1,0 +1,17 @@
+{
+  "name": "10.5281/zenodo.12542554",
+  "title": "Umgang mit Herausforderungen im Leben - Coping-Studie II",
+  "description": "Diese Datei gibt eine Übersicht über die im Datensatz enthaltenen Daten im Data Package Standard (https://datapackage.org). Der dokumentierte Datensatz ist auf den Plattformen Zenodo (https://doi.org/10.5281/zenodo.12542554) und Github (https://github.com/robert-koch-institut/Umgang_mit_Herausforderungen_im_Leben_Coping-Studie_2) verfügbar",
+  "homepage": "https://doi.org/10.5281/zenodo.12542554",
+  "resources": [
+    {
+      "name": "beispieldaten_-_coping-study_ii",
+      "type": "table",
+      "path": "Beispieldaten_-_Coping-Study_II.tsv",
+      "scheme": "file",
+      "format": "tsv",
+      "mediatype": "text/csv",
+      "schema": "Metadaten/schemas/tableschema_Daten_-_Coping-Study_II.json"
+    }
+  ]
+}
