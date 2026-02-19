@@ -3,7 +3,7 @@
 
 Dokumentation  
 
-# Umgang mit Herausforderungen im Leben - Coping-Studie II  
+# Umgang mit Herausforderungen im Leben - Coping-Studie II
 
 <br> 
 <br> 
@@ -20,15 +20,17 @@ Dokumentation
 <br> 
 
 **Zitieren**  
+<!-- CITATION_START: {"citation_style": "apa"} -->
 Cohrdes, C. (2025). Umgang mit Herausforderungen im Leben - Coping-Studie II [Data set]. Zenodo. [https://doi.org/10.5281/zenodo.12542554](https://doi.org/10.5281/zenodo.12542554)
+<!-- CITATION_END -->
+
 
 <br>
-
 
 **Zusammenfassung**    
 Die Coping-Studie II untersucht Bewältigungsstrategien im Umgang mit Herausforderungen und dient der Validierung einer Kurzskala zur Erhebung von Coping-Strategien in deutscher und englischer Sprache. Die Studie wurde im Oktober 2023 als querschnittliche Online-Befragung mit 2.000 Erwachsenen im Alter von 18 bis 74 Jahren aus Deutschland und dem Vereinigten Königreich durchgeführt. Das Studiendesign berücksichtigte soziodemografische Variablen, psychische Gesundheit, gesundheitsbezogene Lebensqualität sowie Coping-Strategien und -Situationen in verschiedenen Lebensbereichen.  
 
-Zur Datenerhebung wurden etablierte psychometrische Instrumente wie PROMIS-29, BFI-10 und weitere Validierungsmaßnahmen herangezogen. Die Datenqualität wurde durch Prüfung auf unplausible Antworten mittels statistischer Indizes sichergestellt. Der finale Datensatz wird als Open Data bereitgestellt und steht zur wissenschaftlichen Nachnutzung über das Forschungsdatenzentrum des Robert Koch-Instituts zur Verfügung. Die Ergebnisse dieser Studie wurden in die Surveillance psychischer Gesundheit integriert und sollen zur weitergehenden Forschung im Bereich der Coping-Mechanismen beitragen.  
+Zur Datenerhebung wurden etablierte psychometrische Instrumente wie PROMIS-29, BFI-10 und weitere Validierungsmaßnahmen herangezogen. Die Datenqualität wurde durch Prüfung auf unplausible Antworten mittels statistischer Indizes sichergestellt. Der finale Datensatz wird als Open Data bereitgestellt und steht zur wissenschaftlichen Nachnutzung über das Forschungsdatenzentrum des Robert Koch-Instituts zur Verfügung. Die Ergebnisse dieser Studie sollen künftig in die psychische Gesundheitsüberwachung integriert werden und zur weitergehenden Forschung im Bereich der Coping-Mechanismen beitragen.  
 
 <br>
 
@@ -40,12 +42,13 @@ Zur Datenerhebung wurden etablierte psychometrische Instrumente wie PROMIS-29, B
   - [Datenerhebung](#datenerhebung)  
   - [Aufbau und Inhalt des Datensatzes](#aufbau-und-inhalt-des-datensatzes)  
   - [Hinweise zur Nachnutzung der Daten](#hinweise-zur-nachnutzung-der-daten)  
-  - [Literaturverzeichnis](#literaturverzeichnis) 
+  - [Literaturverzeichnis](#literaturverzeichnis)  
 <!-- TOC_END -->
 
 <br>
 
 <!-- HEADER_END -->
+
 ## Einleitung   
 
 Primäres Ziel der Studie „Umgang mit Herausforderungen im Leben - Coping-Studie II“ war die Validierung einer Kurzskala zur Messung von Bewältigungsstrategien (Coping-Strategien) in deutscher und englischer Sprache, die im Rahmen von Coping-Studie I ([Cohrdes, 2025](https://doi.org/10.5281/zenodo.13304391)) entwickelt wurde. Die resultierende Kurzskala wurde nach Prüfung (gemäß psychometrischer Gütekriterien) in eine regelmäßige Surveillance psychsicher Gesundheit  überführt und wird als Bestandteil der Studienreihe „[Gesundheit in Deutschland](https://www.rki.de/DE/Content/Gesundheitsmonitoring/Studien/gesundheit_deutschland/gesundheit_in_deutschland_node.html)" repräsentativ für die in Deutschland lebende Erwachsenenbevölkerung erhoben, bewertet und berichtet.  
@@ -55,7 +58,7 @@ Die Coping-Studie II ist eine querschnittliche Online-Befragung von insgesamt 2.
 Für die Studie liegt ein Ethikvotum von der Ethikkommission der Deutschen Gesellschaft für Psychologie (DGPs; Cohrdes Caroline2023-08-03AM) vor. Alle Teilnehmenden gaben ihr informiertes Einverständnis zur Studienteilnahme.  
 
 > [!NOTE]
-> Der vorliegende Datensatz stellt Kontext- und Strukturinformationen der Rohdaten als Open Data zur wissenschaftlichen Nachnutzung bereit. In diesem Zusammenhang, werden die im Datensatz beschriebenen Daten der Studie über das Forschungsdatenzentrum des Robert Koch-Instituts für die wissenschaftliche Nachnutzung beantragbar sein (https://rki.de/fdz).  
+> Der vorliegende Datensatz stellt Kontext- und Strukturinformationen der Rohdaten als Open Data zur wissenschaftlichen Nachnutzung bereit. In diesem Zusammenhang, werden die im Datensatz beschriebenen Daten der Studie über das Forschungsdatenzentrum des Robert Koch-Instituts für die wissenschaftliche Nachnutzung beantragbar sein ([https://rki.de/fdz](https://rki.de/fdz)).  
 
 
 ## Projektbeteiligte und Rollenbesetzungen  
@@ -65,6 +68,7 @@ Die Coping-Studie II (Forschungsfragen, Studiendesign, Studieninhalte und Frageb
 Die Veröffentlichung der Daten sowie das Qualitätsmanagement der (Meta-)Daten erfolgen durch das [Fachgebiet MF 4 | Fach- und Forschungsdatenmanagement](https://www.rki.de/mf4) des RKI. Fragen zum Datenmanagement und zur Publikationsinfrastruktur können an das Open Data Team des Fachgebiets MF4 gerichtet werden ([OpenData@rki.de](mailto:OpenData@rki.de)).    
 
 ## Datenerhebung  
+
 ### Stichprobe  
 
 Es handelt sich um eine nicht repräsentative Ad-hoc Stichprobe von n=1000 in Deutschland und n=1000 im Vereinigten Königreich lebenden Erwachsenen. Die Rekrutierungskriterien folgten den Vorgaben eines 4x2x2-Studiendesigns ausbalanciert im Hinblick auf vier Altersgruppen (18-29, 30-44, 45-59, 60-74 Jahre), dem Geschlecht bei Geburt (weiblich, männlich) und dem Studienort (DE, UK) mit einer Zellbesetzung von jeweils 125 Personen und Zeilen-/Spaltensummen von jeweils 500 Personen.  
@@ -193,7 +197,7 @@ Um die Häufigkeitsverteilungen nutzer:innenfreundlich und verständlich darzust
 
 |Datei|Download|
 | ---| ---|
-|`Haeufigkeitsverteilung_-_Coping-Study_II.json`|[💾](https://github.com/robert-koch-institut/Umgang_mit_Herausforderungen_im_Leben_Coping-Studie_2/blob/main/Haeufigkeitsverteilung_-_Coping-Study_II.json)|
+|`Haeufigkeitsverteilungen_-_Coping-Study_II.json`|[💾](https://github.com/robert-koch-institut/Umgang_mit_Herausforderungen_im_Leben_Coping-Studie_2/blob/main/Haeufigkeitsverteilungen_-_Coping-Study_II.json)|
 
 ### Beispieldaten  
 
@@ -208,15 +212,13 @@ Die Beispieldaten dienen vor allem dazu, sich vor der eigentlichen Datenbereitst
 
 <!-- FOOTER_START: {"lang": "de"} -->
 
-
-
 ### Metadaten  
 
 Zur Erhöhung der Auffindbarkeit sind die bereitgestellten Daten mit Metadaten beschrieben. Über GitHub Actions werden Metadaten an die entsprechenden Plattformen verteilt. Für jede Plattform existiert eine spezifische Metadatendatei, diese sind im Metadatenordner hinterlegt:  
 
 > [Metadaten/](https://github.com/robert-koch-institut/Umgang_mit_Herausforderungen_im_Leben_Coping-Studie_2/tree/main/Metadaten/) 
 
-Versionierung und DOI-Vergabe erfolgt über [Zenodo.org](https://zenodo.org). Die für den Import in Zenodo bereitgestellten Metadaten sind in der [zenodo.json](https://github.com/robert-koch-institut/Umgang_mit_Herausforderungen_im_Leben_Coping-Studie_2/blob/main/Metadaten/zenodo.json) hinterlegt. Die Dokumentation der einzelnen Metadatenvariablen ist unter https://developers.zenodo.org/#representation nachlesbar.
+Versionierung und DOI-Vergabe erfolgt über [Zenodo.org](https://zenodo.org). Die für den Import in Zenodo bereitgestellten Metadaten sind in der [zenodo.json](https://github.com/robert-koch-institut/Umgang_mit_Herausforderungen_im_Leben_Coping-Studie_2/blob/main/Metadaten/zenodo.json) hinterlegt. Die Dokumentation der einzelnen Metadatenvariablen ist unter [https://developers.zenodo.org/#representation](https://developers.zenodo.org/#representation) nachlesbar.
  
 > [Metadaten/zenodo.json](https://github.com/robert-koch-institut/Umgang_mit_Herausforderungen_im_Leben_Coping-Studie_2/blob/main/Metadaten/zenodo.json)  
 
@@ -253,18 +255,18 @@ Für tabellarische Daten definieren wir zusätzlich ein [Table Schema](https://d
 
 Offene Forschungsdaten des RKI werden auf [Zenodo.org](http://Zenodo.org/), [GitHub.com](http://GitHub.com/), [OpenCoDE](https://gitlab.opencode.de) und [Edoc.rki.de](http://Edoc.rki.de/) bereitgestellt:  
 
-- https://zenodo.org/communities/robertkochinstitut  
-- https://github.com/robert-koch-institut  
-- https://gitlab.opencode.de/robert-koch-institut  
-- https://edoc.rki.de/  
+- [https://zenodo.org/communities/robertkochinstitut](https://zenodo.org/communities/robertkochinstitut)  
+- [https://github.com/robert-koch-institut](https://github.com/robert-koch-institut)  
+- [https://gitlab.opencode.de/robert-koch-institut](https://gitlab.opencode.de/robert-koch-institut)  
+- [https://edoc.rki.de/](https://edoc.rki.de/) 
 
 
-Darüber hinaus können die Studiendaten beim Forschungsdatenzentrum des RKI für wissenschaftliche Nachnutzungen beantragt werden.  
-
+> [!NOTE]
+> Darüber hinaus können die Studiendaten beim Forschungsdatenzentrum des RKI für wissenschaftliche Nachnutzungen beantragt werden.  
 > [https://www.rki.de/fdz/](https://www.rki.de/fdz/) 
 
 
- 
+
 ### Lizenz  
 
 Der Datensatz "Umgang mit Herausforderungen im Leben - Coping-Studie II" ist lizenziert unter der [Creative Commons Namensnennung 4.0 International Public License | CC-BY 4.0 International](https://creativecommons.org/licenses/by/4.0/deed.de).  
